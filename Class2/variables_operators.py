@@ -1,3 +1,7 @@
+# Print Built in Function
+greeting = 'Hello World'
+print(greeting)
+
 """ Addition """
 # num1 = 8
 # num2 = 4
@@ -23,97 +27,100 @@
 
 """ Program to find the perimeter of a rectangle
 perimeter = (length + width) * 2 """
-Length = 8
-Width = 6
-Perimeter = (Length + Width) * 2
-print(Perimeter)
+length = 8
+width = 6
+perimeter = (length + width) * 2
+print(perimeter)
 
 
 """ Data Types """
 
 # # Integer
-# NumInt = 5
-# print(NumInt)
-# print(type(NumInt))
+# num_int = 5
+# print(num_int)
+# print(type(num_int))
 
 # # String
-# FavColor = 'blue'
-# print(FavColor)
-# print(type(FavColor))
+# fav_color = 'blue'
+# print(fav_color)
+# print(type(fav_color))
 
 # # Bool
-# TechErrors = False
-# print(TechErrors)
-# print(type(TechErrors))
+# tech_errors = False
+# print(tech_errors)
+# print(type(tech_errors))
 
 # # Float
-# NumFloat = 1.22
-# print(NumFloat)
-# print(type(NumFloat))
+# num_float = 1.22
+# print(num_float)
+# print(type(num_float))
 
 # # String
-# FirstName = 'Jean'
-# LastName = 'Juste'
-# FullName = FirstName + ' ' + LastName
-# print(FullName)
-# print(FirstName, LastName)
+# first_name = 'Jean'
+# last_name = 'Juste'
+# fullname = first_name + ' ' + last_name
+# print(fullname)
+# print(first_name, last_name)
 
 # # List 
-# StudentGrades = [100, 95, 70, 85, 40]
-# print(StudentGrades)
-# print(type(StudentGrades))
+# # Student grade dataset
+# student_grades = [100, 95, 70, 85, 40]
+# print(student_grades)
+# print(type(student_grades))
 
-# # For loop
-# for s in StudentGrades:
+# For loop
+# for s in student_grades:
 #     print(s)
 
 
 # # Dictionary
-# DemographicInfo = {"First Name": "Jean",
+# demographic_info = {"First Name": "Jean",
 #                     "Last Name": "Juste",
 #                     "State": "New York"}
 
-# print(DemographicInfo)
-# print(type(DemographicInfo))
+# print(demographic_info)
+# print(type(demographic_info))
 
 
-# # Cast a string to an integer
-# MyString = '5'
-# print(type(MyString))
-# NewNumber = int(MyString) # casting our string to an integer
-# print(NewNumber)
-# print(type(NewNumber))
+""" Cast a string to an integer """
+# my_string = '5'
+# print(type(my_string))
+# new_number = int(my_string) # casting our string to an integer
+# print(new_number)
+# print(type(new_number)
 
 
-# # Cast integer to string
-# SecondNum = 10
-# print(type(SecondNum))
-# NewString = str(SecondNum)
-# print(NewString)
-# print(type(NewString))
+""" Cast integer to string """
+# second_num = 10
+# print(type(second_num))
+# new_string = str(second_num)
+# print(new_string)
+# print(type(new_string))
 
 
-# Student grade dataset
+""" Colors """
+# fav_colors = ['blue', 'green', 'red', 'brown', 'black', 'purple'] # List item has 4 elements
+# num_colors = len(fav_colors)
+# print(num_colors)
+
+# color = 'orange'
+
+# my_count = len(color)
+# print(my_count)
+
+# for c in color:
+#     print(c)
 
 
-# finding amount of assignments
-
-
-# Perimeter of a rectangle
-
-
-# Determine perimeter and display output
-
-
-# Fahrenheit to Celsius
+""" Fahrenheit to Celsius """
 # F = 89
 # C = 5/9 * (F - 32)
 # print(C)
 
 
-# Eval
-coldWeather = 'True'
-print(eval(coldWeather))
+""" Eval """
+# ColdWeather = 'True'
+# print(eval(ColdWeather))
 
 
 '''
