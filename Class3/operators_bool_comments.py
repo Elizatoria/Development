@@ -86,48 +86,61 @@ num_two -= 15
 # Multiply by 3 *
 my_value = 9
 my_value *= 3
-print(my_value)
+# print(my_value)
 
 
 # Multiply by 10 *
 mileage = 15
 mileage *= 10
-print(mileage)
+# print(mileage)
 
 
 # Divide by 2 /
 pizza_slices = 8
+pizza_slices /= 2
+# print(pizza_slices)
 
 
 # Divide by 7 /
 fees = 8.90
+fees /= 7
+# print(fees)
 
 
 # Raise to the 3rd power **
 num_three = 6
-
+num_three **= 3
+# print(num_three)
 
 
 # Raise to the 2nd power **
 data = 16
+data **= 2
+# print(data)
 
 
 # Integer divide by 3 //
 val_one = 16
-
+val_one //= 3
+# print(val_one)
 
 
 # Integer divide by 4 //
 val_two = 9
+val_two //= 4
+# print(val_two)
 
 
 # Find the remainder if divided by 3 %
 val_three = 10
-
+val_three %= 3
+print(val_three)
 
 
 # Find the remainder if divided by 5 %
 val_four = 14
+val_four %= 5
+print(val_four)
 
 
 # Refactor the fahrenheit/celsius converter using shortcut operators
