@@ -134,31 +134,49 @@ val_two //= 4
 # Find the remainder if divided by 3 %
 val_three = 10
 val_three %= 3
-print(val_three)
+#print(val_three)
 
 
 # Find the remainder if divided by 5 %
 val_four = 14
 val_four %= 5
-print(val_four)
+#print(val_four)
 
 
 # Refactor the fahrenheit/celsius converter using shortcut operators
 
-# fahrenheight = 89 
-# celsius = (fahrenheight - 32) * 5/9
+fahrenheit = 89 
+# celsius = (fahrenheit - 32) * 5/9
+# print(celsius)
+
+fahrenheit -= 32
+fahrenheit *= 5/9
+celsius = fahrenheit
 # print(celsius)
 
 
 ''' Boolean Operators'''
 
 # Is 7 less than 5? <
+#print(7 < 5)
+
+# result = (7 < 5)
+# print(result)
 
 
 # Is 4 less than or equal to 4? <=
+# print(4 <= 4)
+
+# result = (4 <= 4)
+# print(result)
 
 
 # Is 6 greater than 2? >
+print(6 > 2)
+
+result = (5 > 2)
+print(result)
+
 
 
 # Is 5 greater than or equal to 6? >=
