@@ -172,26 +172,43 @@ celsius = fahrenheit
 
 
 # Is 6 greater than 2? >
-print(6 > 2)
+# print(6 > 2)
 
-result = (5 > 2)
-print(result)
-
+# result = (5 > 2)
+# print(result)
 
 
 # Is 5 greater than or equal to 6? >=
+# print(5 >= 6)
+
+# result = (5 >= 6)
+# print(result)
 
 
 # Is 5 equal to 5? ==
+# print(5 == 5)
+
+# result = (5 == 5)
+# print(result)
 
 
 # Is 100 not equal to 75? !=
+# print(100 != 75)
+
+# result = (100 != 75)
+# print(result)
 
 
 # and
+print(5 == 5 and 4 == 4)  # This is True because both are True
+print(2 ==2 and 3 == 2)  # This is False because one is False
+print(1 == 0 and 3 == 5) # This is False because both are False
 
 
 # Values from example 1 can be stored in variables
+log_1 = (5 == 3)
+log_2 = (4 == 3)
+print(log_1 and log_2)
 
 
 # or
