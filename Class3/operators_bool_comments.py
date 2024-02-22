@@ -212,18 +212,32 @@ print(log_1 and log_2)
 
 
 # or
+print(4 == 4 or 3 == 2)  # This is True because at least one is True
 
 
 # not
+x = 5
+y = 7
 
 # Is x less than y?
+print(x < y)
+print(not x < y)
 
 
 # Are we the same object? is 
+fname = 'Taylor'
+new_name =fname
+print(new_name is fname)
+
 
 # in
+print('J' in 'January')
+print('M' in 'March')
 
 
 # eval
+is_open = True
+weekday = False
 
-
+print(eval(is_open))
+print(eval(weekday))
