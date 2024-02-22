@@ -200,19 +200,19 @@ celsius = fahrenheit
 
 
 # and
-print(5 == 5 and 4 == 4)  # This is True because both are True
-print(2 ==2 and 3 == 2)  # This is False because one is False
-print(1 == 0 and 3 == 5) # This is False because both are False
+# print(5 == 5 and 4 == 4)  # This is True because both are True
+# print(2 ==2 and 3 == 2)  # This is False because one is False
+# print(1 == 0 and 3 == 5) # This is False because both are False
 
 
 # Values from example 1 can be stored in variables
 log_1 = (5 == 3)
 log_2 = (4 == 3)
-print(log_1 and log_2)
+# print(log_1 and log_2)
 
 
 # or
-print(4 == 4 or 3 == 2)  # This is True because at least one is True
+# print(4 == 4 or 3 == 2)  # This is True because at least one is True
 
 
 # not
@@ -220,24 +220,24 @@ x = 5
 y = 7
 
 # Is x less than y?
-print(x < y)
-print(not x < y)
+# print(x < y)
+# print(not x < y)
 
 
 # Are we the same object? is 
 fname = 'Taylor'
 new_name =fname
-print(new_name is fname)
+# print(new_name is fname)
 
 
 # in
-print('J' in 'January')
-print('M' in 'March')
+# print('J' in 'January')
+# print('M' in 'March')
 
 
 # eval
-is_open = True
-weekday = False
+is_open = 'True'
+weekday = 'False'
 
 print(eval(is_open))
 print(eval(weekday))
