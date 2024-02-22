@@ -6,5 +6,4 @@ df = pd.DataFrame(animals)  # Covert our List to a Format to which Pandas can us
 
 # print(df)
 
-
 df.to_csv('output.csv')  # This will give us our Output

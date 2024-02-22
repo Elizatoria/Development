@@ -15,17 +15,17 @@ Requirements
         +5
 '''
 
-#Formula for the Perimeter of a Triangle
-#Perimeter = Side1 + Base + Side2
+# Formula for the Perimeter of a Triangle
+# Perimeter = Side1 + Base + Side2
 
-side1 = 5
-base = 6
-side2 = 10
+side1 = 5  # Side # 1
+base = 6  # Base
+side2 = 10  # Side # 2
 
-perimeter = side1 + base + side2
+perimeter = side1 + base + side2  # Perimeter of a Triangle Calculation
 
-print('The Perimeter of your Triangle is', perimeter)
+print('The Perimeter of your Triangle is', perimeter)  # Printing out the Perimeter
 
-print('Is Side # 1 greater than Side # 2?', side1 > side2)
+print('Is Side # 1 greater than Side # 2?', side1 > side2)  # Printing out if Side # 1 is greater than Side # 2
 
-print('Is the Base equal to Side # 1?', base == side1)
+print('Is the Base equal to Side # 1?', base == side1)  # Printing out if the Base is equal to Side # 1

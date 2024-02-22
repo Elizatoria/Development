@@ -145,10 +145,3 @@ a brief python script that will determine the perimeter of the triangle. Comment
 # print(Side1 > Base)
 # print(Side2 < Base)
 # print(Base > Side1)
-
-
-
-
-
-
-
