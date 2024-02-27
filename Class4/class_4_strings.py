@@ -162,15 +162,19 @@ test_4 = '012345'
 # print(test_4.isalpha())
 
 ex_9 = 'LMN0P' # Are we all in the alphabet
+# print(ex_9.isalpha())
 
 
 # isdecimal() Are all characters decimals?
 
 test_5 = '1234P'
 test_6 = '234567'
-
+# print(test_5.isdecimal())
+# print(test_6.isdecimal())
 
 ex_11 = '123456' # Check for decimals?
+# print(ex_11.isdecimal())
+
 
 # isdigit() Are all characters digits?
 
