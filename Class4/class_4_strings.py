@@ -304,15 +304,15 @@ False
 4
 True
 '''
-# Get input from user
-user_input = input('Please, enter your input: ')
+# # Get input from user
+# user_input = input('Please, enter your input: ')
 
-# Test input
-result = user_input.isdigit()
+# # Test input
+# result = user_input.isdigit()
 
-# Provide output
-print('Is your input a Number or not?', result)
-
+# # Provide output
+# print('Is your input a Number or not?', result)
+# print(f'Is {user_input} a Number or not?', result)
 
 
 '''
@@ -327,14 +327,18 @@ python
 4
 True
 '''
-
 # Get user input
+user_word_input = input('Enter a Word: ')
+user_number_input = int(input('Enter a Number: '))
 
 # Convert where needed
+length_of_word = len(user_word_input)
 
 # Comparison
+result = (length_of_word > user_number_input)
 
 # Output
+print(f'Is {user_word_input} longer than {user_number_input}?', result)
 
 
 '''
