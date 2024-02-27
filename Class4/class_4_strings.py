@@ -239,12 +239,18 @@ ex_15 = 'Tempus Fugit' # check for title casing
 # join() Joins the elements of an iterable to the end of the string
 
 my_colors = ['blue', 'green', 'red', 'orange', 'blue']
-
+new_string = '-'.join(my_colors)
+# print(new_string)
 
 ex_16 = ['summer', 'spring', 'fall', 'winter'] # create a string from this list and separate it with an asterisk
+new_ex = '*'.join(ex_16)
+# print(new_ex)
+
 
 # lower() Converts a string into lower case
 day = 'MONDAY'
+new_day = day.lower()
+# print(new_day)
 
 
 # partition() Returns a tuple where the string is partitioned into three parts
@@ -275,10 +281,18 @@ name = 'giraffe'
 
 ex_20 = 'summer' # Check if this string starts with an 's'
 
+
 # strip() Returns a trimmed version of the string
 username = '   jessica123    '
+username_clean = username.strip()
+# print(len(username))
+# print(len(username_clean))
 
 ex_21 = '  sportsfan876  ' # sanitize this string
+ex_21_clean = ex_21.strip()
+# print(len(ex_21))
+# print(len(ex_21_clean))
+
 
 '''
 Write some code that will take a string from the user and print if it is a number or not.
@@ -290,12 +304,14 @@ False
 4
 True
 '''
-
 # Get input from user
+user_input = input('Please, enter your input: ')
 
 # Test input
+result = user_input.isdigit()
 
 # Provide output
+print('Is your input a Number or not?', result)
 
 
 
