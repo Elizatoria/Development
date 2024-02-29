@@ -98,7 +98,7 @@ superheroine = 'Wonder Woman'
 
 # Lets step through this entire word and skip by 4
 word = 'Supercalifragilisticexpialidocious'
-print(word[4:len(word):4])
+print(word[0:len(word):4])
 
 
 '''Slicing in reverse '''
