@@ -98,26 +98,27 @@ superheroine = 'Wonder Woman'
 
 # Lets step through this entire word and skip by 4
 word = 'Supercalifragilisticexpialidocious'
-print(word[0:len(word):4])
+# print(word[0:len(word):4])
 
 
 '''Slicing in reverse '''
 
-animal = 'daycare' # Excludes the start character
-# print(animal[::-1]) # Full daycare in reverse
-# print(animal[5:0:-1]) # aycar
-# print(animal[6:0:-1]) # eracya
+random_word = 'daycare' # Excludes the start character
+# print(random_word[::-1]) # Full daycare in reverse
+# print(random_word[5:0:-1]) # aycar
+# print(random_word[6:0:-1]) # eracya
 
 
 '''
 Write some code to print the second half of a string.
-
-
 Example:
 python
 hon
-
 '''
+language = 'python'
+half = int((len(language)/2))
+result = language[half:len(language)]
+# print(result)
 
 
 '''
@@ -133,12 +134,15 @@ To do this, use boolean statements on your string.
 Test your code on a few inputs to make sure it works!
 
 '''
-
 # Get input 
+email = input('Please enter your email: ')
 
 # Clean input
+clean_email = email.strip()
 
 # Test 1: It has a "." at the third-to-last index
+test_1 = (clean_email[-4] == '.')
+print(f'Test 1: Does {clean_email} have a "." at the third-to-last index?', test_1)
 
 # Test 2: It has exactly one "@" symbol, at the fifth-to-last index or earlier
 
@@ -147,6 +151,7 @@ Test your code on a few inputs to make sure it works!
 # Test 4: It doesn’t have any spaces (doesn’t contain " ")
 
 #Final Test with and Keyword
+
 
 
 # End Parameter
