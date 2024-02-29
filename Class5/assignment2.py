@@ -24,6 +24,7 @@ test_1 = (clean_email[-4] == '.')
 
 # Test 2: It has exactly one "@" symbol, at the fifth-to-last index or earlier
 test_2 = (clean_email[-6] == '@')
+print(f'Does it have exactly one "@" symbol, at the fifth-to-last index or earlier?', test_2)
 
 # Test 3: There is at least one character before the "@" symbol
 
