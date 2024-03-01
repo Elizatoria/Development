@@ -30,7 +30,12 @@ else:
 # print(f'Does it have exactly one "@" symbol, at the fifth-to-last index or earlier?', test_2)
 
 # Test 3: There is at least one character before the "@" symbol
-test_3 = clean_email
+if test_3 := test_2 == True:
+    index = clean_email.find("@")
+    test_3 = clean_email[index-1].isalnum()
+else:
+    False
+print(f'Is there at least one character before the "@" symbol?', test_3)
 
 # Test 4: It doesn’t have any spaces (doesn’t contain " ")
 
