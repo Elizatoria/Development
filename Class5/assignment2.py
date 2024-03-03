@@ -38,15 +38,12 @@ else:
 # print(f'Is there at least one character before the "@" symbol?', test_3)
 
 # Test 4: It doesn’t have any spaces (doesn’t contain " ")
-    if test_4 := " " in clean_email:
-        test_4 == False
-    else:
-        test_4 == True
-    print(test_4)
+test_4 = " " not in clean_email
+# print(f'Does the email have no spaces?', test_4)
 
 #Final Test with and Keyword
-if final_test := test_1 and test_2 and test_3 == True:
+if final_test := test_1 and test_2 and test_3 and test_4 == True:
     final_test == True
 else:
     final_test== False
-# print(f'Is the email valid?', final_test)
+print(f'Is the email valid?', final_test)
