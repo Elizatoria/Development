@@ -145,14 +145,20 @@ test_1 = (clean_email[-4] == '.')
 # print(f'Test 1: Does {clean_email} have a "." at the third-to-last index?', test_1)
 
 # Test 2: It has exactly one "@" symbol, at the fifth-to-last index or earlier
-test_2 = (clean_email[-6] == '@')
+test_2 = ('@' in clean_email[-6::-1])
+# print(f'Does it have exactly one "@" symbol, at the fifth-to-last index or earlier?', test_2)
 
 # Test 3: There is at least one character before the "@" symbol
+test_3 = (clean_email.index('@') > 0)
+# print(f'Is there at least one character before the "@" symbol?', test_3)
 
 # Test 4: It doesn’t have any spaces (doesn’t contain " ")
+test_4 = (' ' not in clean_email)
+# print(f'Does the email have no spaces?', test_4)
 
 #Final Test with and Keyword
-
+final_result = (test_1 and test_2 and test_3 and test_4)
+print(f'Is the email valid?', final_result)
 
 
 # End Parameter
