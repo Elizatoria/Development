@@ -2,12 +2,20 @@
 
 ''' Lets follow through the two code snippets below'''
 
-# This will run
+# # This will run
+# x = 20
+# y = 15
+
+# if x > y:
+#     print(x)
 
 
-# This will not run
+# # This will not run
+# x = 20
+# x = 20
 
-
+# if x > y:
+#     print(x)
 
 
 '''
@@ -28,7 +36,10 @@ This is odd
 
 
 '''Exercise Solution'''
+# user_input = int(input('Enter a Number: '))
 
+# if user_input % 2 != 0:
+#     print('This is Odd')
 
 
 ''' Else If (Elif) Statements '''
