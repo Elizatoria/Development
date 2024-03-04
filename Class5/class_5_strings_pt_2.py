@@ -149,7 +149,7 @@ test_2 = ('@' in clean_email[-6::-1])
 # print(f'Does it have exactly one "@" symbol, at the fifth-to-last index or earlier?', test_2)
 
 # Test 3: There is at least one character before the "@" symbol
-test_3 = (clean_email.index("@") > 0)
+test_3 = (clean_email.index('@') > 0)
 # print(f'Is there at least one character before the "@" symbol?', test_3)
 
 # Test 4: It doesn’t have any spaces (doesn’t contain " ")
