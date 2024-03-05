@@ -2,20 +2,21 @@
 
 ''' Lets follow through the two code snippets below'''
 
-# # This will run
-# x = 20
-# y = 15
+# This will run
+x = 20
+y = 15
+
+# if x > y:
+#     print(x)
+
+# This will not run
+x = 20
+y = 20
 
 # if x > y:
 #     print(x)
 
 
-# # This will not run
-# x = 20
-# x = 20
-
-# if x > y:
-#     print(x)
 
 
 '''
@@ -26,20 +27,19 @@ Write some code that prints “This is odd” if the user inputs an odd number.
 Example:
 User input: 7
 This is odd
-
 '''
 
 # We can use modulus to figure out odd or even
-# val = 6
+# val = 8
 # result = val % 2
 # print(result)
 
 
 '''Exercise Solution'''
-# user_input = int(input('Enter a Number: '))
+# user_input = int(input("Please enter your number: "))
 
 # if user_input % 2 != 0:
-#     print('This is Odd')
+#     print("This is odd")
 
 
 ''' Else If (Elif) Statements '''
@@ -52,18 +52,45 @@ C - Between 70 and 79
 D - Between 65 and 69
 F - Anything under 65
 '''
-# score = int(input('Enter your Grade: '))
+# Get grade from user
+# score = int(input("Please enter your grade: "))
 
+# Create our conditional
+# Option 1
 # if score >= 90 and score <= 100:
-#     print('Grade A')
+#     print("Grade A")
 # elif score >= 80 and score < 90:
-#     print('Grade B')
+#     print("Grade B")
 # elif score >= 70 and score < 80:
-#     print('Grade C')
+#     print("Grade C")
 # elif score >= 65 and score < 70:
-#     print('Grade D')
+#     print("Grade D")
 # else:
-#     print('Grade F')
+#     print("Grade F")
+
+# Option 2
+# if 90 <= score <= 100:
+#     print("Grade A")
+# elif 80 <= score < 90:
+#     print("Grade B")
+# elif 70 <= score < 80:
+#     print("Grade C")
+# elif 65 <= score < 70:
+#     print("Grade D")
+# else:
+#     print("Grade F")
+
+# Option 3
+# if score >= 90:
+#     print("Grade A")
+# elif score >= 80:
+#     print("Grade B")
+# elif score >= 70:
+#     print("Grade C")
+# elif score >= 65:
+#     print("Grade D")
+# else:
+#     print("Grade F")
 
 
 '''
@@ -81,18 +108,26 @@ This is even
 '''
 
 ''' Exercise solution with an elif and else'''
-# user_input = int(input('Enter a Number: '))
 
+# user_input = int(input("Please enter your number: "))
+
+# With an elif
 # if user_input % 2 != 0:
-#     print('This is Odd')
+#     print("This is odd")
 # elif user_input % 2 == 0:
-#     print('This is Even')
+#     print("This is even")
+
+# With an else
+# if user_input % 2 != 0:
+#     print("This is odd")
+# else:
+#     print("This is even")
+
 
 
 '''
 Exercise
 Add to your previous code so if the user enters something that isn't an odd number or an even number, print “Unknown”.
-
 
 Examples:
 User input: 7
@@ -103,33 +138,37 @@ This is even
 
 User input: 9.2
 Unknown
-
-
 '''
 
 ''' Exercise solution(s)'''
-# # Option One
+
+
+# Check for a decimal
+# user_input = input("Please enter your number: ")
+
+# if not user_input.isdecimal():
+#     print('Unknown')
+# elif (int(user_input) % 2) != 0:
+#     print(f'{user_input} is odd')
+# else:
+#     print(f'{user_input} is even')
+
 # try:
-#     user_input = int(input('Enter a Number: '))
+#     user_input = int(input("Please enter your number: "))
 # except:
 #     print('Unknown')
 # else:
-#     if int(user_input) % 2 != 0:
-#         print(f'{user_input} is Odd')
+#     if user_input % 2 != 0:
+#         print("This is odd")
 #     else:
-#         print(f'{user_input} is Even')
+#         print("This is even")
 
 
-# # Option Two
-# user_input = input('Enter a Number: ')
 
-# if not user_input.isdecimal():
-#     print(f'{user_input} is Unknown')
-# elif int(user_input) % 2 != 0:
-#     print(f'{user_input} is Odd')
-# else:
-#     print(f'{user_input} is Even')
-    
+
+
+
+
 
 '''
 Exercise
@@ -139,29 +178,35 @@ Write some code that takes in a string from the user and prints whether the stri
 Examples:
 User input: 7
 This is a number
+String method - isdigit
 
 User input: abcde
 This is a word
+String method - isalpha
 
 User input: 7!ab5
 This is something else
+else
 
 '''
-# user_input = input('Enter Input: ')
+# user_input = input("Please enter your data: ")
 
-# if user_input.isdecimal():
-#     print(f'{user_input} is a Number')
+# if user_input.isdigit():
+#     print(f'{user_input} is a number.')
 # elif user_input.isalpha():
-#     print(f'{user_input} is a Word')
-# else:
-#     print(f'{user_input} is Something Else')
+#     print(f'{user_input} is a word.')
+# else: 
+#     print(f'{user_input} is something else.')
+
+
 
 
 '''Chaining Conditionals code results'''
 
 # Mutually exclusive
     
-# temp_f = 35
+# temp_f = 70
+
 # if temp_f > 70:
 #     print("It is hot outside")
 # elif temp_f > 40:
@@ -215,10 +260,31 @@ If they match, print “Login successful.” If they don't, print “Incorrect u
 
 
 
-# Prompt the user to enter their username and password using the input() function.
+# Prompt the user to enter their username and password using the input() function. Be sure to sanitize your data.
+
 
 
 # Create two variables called username and password and set them to any valid string values.
 
 
-# Create your conditional
+
+# Create your conditional, includes your comparison
+
+
+
+
+''' Ask the user for a number, and keep asking them for the number until the enter a number'''
+
+# while True:
+#     user_input = input("Please enter a number: ")
+
+#     if user_input.isdecimal():
+#         print("Thanks for entering a number, have a great day.")
+#         break
+
+
+
+
+
+
+
