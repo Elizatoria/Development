@@ -52,9 +52,18 @@ C - Between 70 and 79
 D - Between 65 and 69
 F - Anything under 65
 '''
+# score = int(input('Enter your Grade: '))
 
-
-
+# if score >= 90 and score <= 100:
+#     print('Grade A')
+# elif score >= 80 and score < 90:
+#     print('Grade B')
+# elif score >= 70 and score < 80:
+#     print('Grade C')
+# elif score >= 65 and score < 70:
+#     print('Grade D')
+# else:
+#     print('Grade F')
 
 
 '''
