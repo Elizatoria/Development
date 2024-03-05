@@ -108,13 +108,28 @@ Unknown
 '''
 
 ''' Exercise solution(s)'''
+# # Option One
+# try:
+#     user_input = int(input('Enter a Number: '))
+# except:
+#     print('Unknown')
+# else:
+#     if int(user_input) % 2 != 0:
+#         print(f'{user_input} is Odd')
+#     else:
+#         print(f'{user_input} is Even')
 
 
+# # Option Two
+# user_input = input('Enter a Number: ')
 
-
-
-
-
+# if not user_input.isdecimal():
+#     print(f'{user_input} is Unknown')
+# elif int(user_input) % 2 != 0:
+#     print(f'{user_input} is Odd')
+# else:
+#     print(f'{user_input} is Even')
+    
 
 '''
 Exercise
@@ -132,8 +147,14 @@ User input: 7!ab5
 This is something else
 
 '''
+user_input = input('Enter Input: ')
 
-
+if user_input.isdecimal():
+    print(f'{user_input} is a Number')
+elif user_input.isalpha():
+    print(f'{user_input} is a Word')
+else:
+    print(f'{user_input} is Something Else')
 
 
 '''Chaining Conditionals code results'''
