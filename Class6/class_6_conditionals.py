@@ -81,10 +81,12 @@ This is even
 '''
 
 ''' Exercise solution with an elif and else'''
+# user_input = int(input('Enter a Number: '))
 
-
-
-
+# if user_input % 2 != 0:
+#     print('This is Odd')
+# elif user_input % 2 == 0:
+#     print('This is Even')
 
 
 '''
