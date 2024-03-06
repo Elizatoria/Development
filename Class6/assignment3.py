@@ -12,19 +12,19 @@ If they match, print “Login successful.” If they don't, print “Incorrect u
 ''' Exercise solution '''
 
 # Prompt the user to enter their username and password using the input() function.
-username_input = input('Enter Username: ')
-password_input = input('Enter Password: ')
+username_input = input('Enter Username: ')  #Get Username from User
+password_input = input('Enter Password: ')  #Get Password from User
 
 #Clean Input
-username_input = username_input.strip()
-password_input = password_input.strip()
+username_input = username_input.strip()  #Remove whitespace from Username
+password_input = password_input.strip()  #Remove whitespace from Password
 
 # Create two variables called username and password and set them to any valid string values.
-username = 'MysticElla'
-password = 'YuGi1989!'
+username = 'MysticElla'  #Variable with Valid String for Username
+password = 'YuGi1989!'  #Variable with Valid String for Password
 
 # Create your conditional
-if username_input == username and password_input == password:
+if username_input == username and password_input == password:  #Testing if what the user entered is the same as what is on file
     print('Login Successful')
 else:
     print('Incorrect Username or Password')
