@@ -27,7 +27,7 @@ test_1 = (clean_email[-4] == '.')  #Looking for "." at -4
 #     test_2 == True
 # else:
 #     test_2 == False
-# Realized that I could make Test 2 one line
+# Realized that I could make Test 2 one line XD
 test_2 = "@" in clean_email[0:-5]  #Looking for "@" at -5 or before
 # print(f'Does it have exactly one "@" symbol, at the fifth-to-last index or earlier?', test_2)
 
@@ -48,6 +48,6 @@ test_4 = " " not in clean_email  #Making sure there are no spaces within the ema
 #     final_test == True
 # else:
 #     final_test== False
-# Realized that I could make Final Test one line
+# Realized that I could make Final Test one line XD
 final_test = (test_1 and test_2 and test_3 and test_4)  #Testing for all Tests to be True
 print(f'Is the email valid?', final_test)
