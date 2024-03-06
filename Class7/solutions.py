@@ -1,15 +1,13 @@
-new_string = 'I am a double quote with a "@" single quote'
-
 '''
 You have a variable called hours which equals 24, the number of hours in a day.
 Print There are 24 hours in a day. Make sure to use your variable.
 First, print using commas. Remember that using commas automatically adds spaces!
 Now, print using string concatenation. Remember to cast hours to a string and manually add the spaces!
 '''
-hours = 24
-print('There are',hours,'in a day.')
-print('There are' + str(hours) + 'in a day.')
-print(f'There are {hours} in a day.')
+# hours = 24
+# print('There are',hours,'in a day.')
+# print('There are' + str(hours) + 'in a day.')
+# print(f'There are {hours} in a day.')
 
 
 '''
@@ -26,9 +24,11 @@ User input: programming is fun
 *programming is fun*
 ********************
 '''
-
-
-
+# user_input = 'I Love Programming'
+# border = (len(user_input) * '*' + '**') 
+# print(border)
+# print('*' + user_input + '*')
+# print(border)
 
 
 '''
@@ -43,13 +43,18 @@ We appreciate your business and look forward to serving you again.
 Sincerely,
 The ABC Company
 '''
+# name = 'Josiah Wilson'
+# product = 'ABC Sneakers'
+# price = 74.95343452342
+# # Remember to format the price
 
-name = 'Josiah Wilson'
-product = 'ABC Sneakers'
-price = 74.95343452342
-
-# Remember to format the price
-
+# print(f'''
+# Dear {name},
+# Thank you for your purchase of a {product}. Your credit card has been charged ${price:.2f}.
+# We appreciate your business and look forward to serving you again.
+# Sincerely,
+# The ABC Company
+# ''')
 
 
 '''
@@ -60,7 +65,11 @@ Examples:
 racecar: True
 cat: False
 '''
+word = 'racecar'
 
+reverse_word = word[::-1]
 
-
-
+if word == reverse_word:
+    print('You have a palindrome.')
+else:
+    print('Not a palindrome.')
