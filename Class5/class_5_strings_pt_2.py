@@ -182,15 +182,15 @@ How can you add sep and end keywords to get the exact formatting shown above?
 # userin = input("Please enter your input: ")
 # # print(f'You entered: {userin}.')  #How I would format it
 
-# # End Keyword Exercise
+# # Formatted strings
 # print("You entered:", end=' ')
 # print(userin, end='')
 # print('.', end='\n')
 
 
-# Formatted strings
-
+# Round Number
 long_num = 12.34567890
+# print(f'{long_num:.2f}')
 
 
 '''
