@@ -296,7 +296,7 @@ new_name = name.startswith('g')
 
 ex_20 = 'summer' # Check if this string starts with an 's'
 ex_start = ex_20.startswith('s')
-print(ex_start)
+# print(ex_start)
 
 
 # strip() Returns a trimmed version of the string
@@ -369,7 +369,16 @@ Example
 User input: Computer
 3
 '''
+# vowel_count= 0
+# user_input = input('Enter Word: ')
 
+# user_input = user_input.lower()
+# vowel_count += user_input.count("a")
+# vowel_count += user_input.count("e")
+# vowel_count += user_input.count("i")
+# vowel_count += user_input.count("o")
+# vowel_count += user_input.count("u")
+# print(vowel_count)
 
 
 '''
@@ -377,8 +386,8 @@ You have a variable called hours which equals 24, the number of hours in a day.
 Print There are 24 hours in a day. Make sure to use your variable.
 First, print using commas. Remember that using commas automatically adds spaces!
 Now, print using string concatenation. Remember to cast hours to a string and manually add the spaces!
-
 '''
+# Answer in Solutions
 
 
 '''
@@ -395,10 +404,10 @@ User input: programming is fun
 *programming is fun*
 ********************
 '''
-
 # get input
-
 
 # get length for top and bottom border
 
 # create output, dont forget to append asterisk to front and back of the string
+
+# Answer in Solutions
