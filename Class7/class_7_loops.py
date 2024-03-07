@@ -195,3 +195,13 @@ However, the data you're given has some values that shouldn't be there.
 Write a Python program that takes a string as input from the user, removes anything from the string that isn't a letter, and prints the new string.
 You can loop through the string in a for loop, use the .isalpha() string method, and remember that strings are immutable, so you will have to build a new string from scratch using string concatenation.
 '''
+result = ''
+user_input = input('Enter Data: ')
+
+for u in user_input:
+    if u.isalpha():
+        result += u
+    else:
+        print(f'{u} is not a Letter')
+
+print(result)
