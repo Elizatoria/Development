@@ -178,22 +178,20 @@ l is a consonant
 l is a consonant
 o is a vowel
 '''
+# word = 'Hello'
+# vowels = ['a', 'e', 'i', 'o', 'u']
 
-
+# for w in word:
+#     if w in vowels:
+#         print(f'{w} is a Vowel')
+#     else:
+#         print(f'{w} is a Consonant')
 
 
 ''' Exercise 
-You're working on a data analysis project for a company that looks at written text. You're only interested in letters from A-Z because you're analyzing language. However, the data you're given has some values that shouldn't be there.
+You're working on a data analysis project for a company that looks at written text. 
+You're only interested in letters from A-Z because you're analyzing language. 
+However, the data you're given has some values that shouldn't be there.
 Write a Python program that takes a string as input from the user, removes anything from the string that isn't a letter, and prints the new string.
 You can loop through the string in a for loop, use the .isalpha() string method, and remember that strings are immutable, so you will have to build a new string from scratch using string concatenation.
 '''
-
-
-
-
-
-
-
-
-
-
