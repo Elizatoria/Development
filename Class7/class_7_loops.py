@@ -125,7 +125,13 @@ my_set = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "S
 '''
 Write a for loop that loops through a string, counts all the letters, and then print how long the string is.
 '''
+# word = 'Supernova'
+# count = 0
 
+# for w in word:
+#     count += 1
+
+# print(f'Length of {word}:', count)
 
 
 ''' Exercise
@@ -139,8 +145,26 @@ Example:
 
 Hint: remember to cast to int() for each digit in the loop
 '''
+# sum = 0
+# number = '14253'
+
+# for n in number:
+#     if number.isdecimal():
+#         n= int(n)
+#         sum += n
+
+# print(f'Sum of {number}:', sum)
 
 
+# sum = 0
+# user_input = input('Enter String of Numbers: ')
+
+# for t in user_input:
+#     if user_input.isdecimal():
+#         t = int(t)
+#         sum += t
+
+# print(f'Sum of {user_input}:', sum)
 
 
 ''' Exercise 
@@ -153,8 +177,6 @@ e is a vowel
 l is a consonant
 l is a consonant
 o is a vowel
-
-
 '''
 
 
