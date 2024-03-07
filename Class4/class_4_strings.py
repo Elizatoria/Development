@@ -368,7 +368,6 @@ What string method can you use to count the number of vowels?
 Example
 User input: Computer
 3
-
 '''
 
 
