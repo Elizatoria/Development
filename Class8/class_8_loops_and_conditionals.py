@@ -1,27 +1,42 @@
-''' Loops and conditionals '''
+''' Loops and conditionals
 
-'''
 What is the difference between a For and While Loop?
 How do I write a For Loop?
-How do I write a While Loop?
+How do I write a While Loop?'''
 
-'''
 # For Loop
-colors = ['green', 'blue', 'orange', 'yellow']
+colors = ['green', 'blue', 'orange', 'yellow']  # How you can solve the Taken Usernames Problem
 
+# for c in colors:
+#     print(c)
 
 
 # While Loop
+# Initialization of Varibles
+limit = 26
+start = 0
 
-
+# while start < limit:  # Condition
+#     print(start)  # Feedback to User
+#     start += 1
 
 
 ''' Break Keyword '''
 
 # Lets look at the 2 examples below and take note where the loop stops
+south, north, east, west = '', '', '', ''  # Initializing Varibles on One Line
 
+# userin = ''  # Initialization of Varible
+# while userin != 'Stop':
+#     userin = input('Enter Something or Hit Stop to Leave Loop: ')
+#     print(userin)
 
-
+userin = ''  # Initialization of Varible
+while True:
+    userin = input('Enter Something or Hit Stop to Leave Loop: ')
+    if userin == 'Stop':
+        break
+    print(userin)
 
 
 ''' Break in nested loops '''
