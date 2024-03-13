@@ -176,10 +176,10 @@ vowels = 'aeiou'
 #         continue
 #     print(l)
 
-for l in word:
-    if l in vowels:
-        pass  # Skips the if statement
-    print(l)
+# for l in word:
+#     if l in vowels:
+#         pass  # Skips the if statement
+#     print(l)
 
 
 '''
@@ -212,3 +212,18 @@ while True:
     if len(user_input) == 0:
         print('String is Empty. Stopping the Loop.')
         break
+    # If Number, Covert to Float, and Add to Total.
+    elif user_input.isnumeric():
+        user_input = float(user_input)  # Casting into a FLoat
+        new_total += user_input
+        print(f'Updated Total is {new_total}')
+        continue
+    # If concatenate to new string
+    elif user_input.isalpha():
+        new_string += user_input
+        print(f'Updated String is {new_string}')
+        continue
+    # Check for Special Characters
+    elif not user_input.isalnum():
+        print(f'{user_input} is Speical Character')
+        continue
