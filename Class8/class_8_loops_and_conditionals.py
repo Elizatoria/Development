@@ -129,7 +129,13 @@ Error: Not a number'''
 #         continue
 
 # Option 2
+# test_string = 'Hello'
 
+# for t in test_string:
+#     if t in 'aeiou':
+#         print(t)
+#     else:
+#         continue
 
 
 ''' 
@@ -141,7 +147,18 @@ Loop through each digit of the number, and only add it to the sum if it's even.
 Print the sum of all the even digits at the end. 
 Make sure to use the continue keyword.
 '''
+user_input, sum = '', 0
 
+while True:
+    user_input = input('Enter your String: ')
+    for u in user_input:  # Loop through string entered by user
+        if u.isalpha():
+            continue  # Continue will allow us to skip the letters
+        else:
+            u = int(u)  # Recasting to a number
+            if (u % 2) == 0:
+                sum += u
+    print(sum)
 
 
 
