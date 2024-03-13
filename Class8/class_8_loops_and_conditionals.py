@@ -90,7 +90,8 @@ Example (error):
 5
 7
 c
-Error: Not a number'''
+Error: Not a number
+'''
 
 # '''Declare any needed variables'''
 # userinput, sum = '', 0
@@ -149,22 +150,36 @@ Make sure to use the continue keyword.
 '''
 user_input, sum = '', 0
 
-while True:
-    user_input = input('Enter your String: ')
-    for u in user_input:  # Loop through string entered by user
-        if u.isalpha():
-            continue  # Continue will allow us to skip the letters
-        else:
-            u = int(u)  # Recasting to a number
-            if (u % 2) == 0:
-                sum += u
-    print(sum)
-
+# while True:
+#     user_input = input('Enter your String: ')
+#     for u in user_input:  # Loop through string entered by user
+#         if u.isalpha():
+#             continue  # Continue will allow us to skip the letters
+#         else:
+#             u = int(u)  # Recasting to a number
+#             if (u % 2) == 0:
+#                 sum += u
+#     print(sum)
 
 
 ''' Break, Continue, and Pass '''
+word = 'Hello'
+vowels = 'aeiou'
 
+# for l in word:
+#     if l in vowels:
+#         print(l)
+#         break
 
+# for l in word:
+#     if l in vowels:
+#         continue
+#     print(l)
+
+for l in word:
+    if l in vowels:
+        pass  # Skips the if statement
+    print(l)
 
 
 '''
@@ -184,11 +199,16 @@ REQUIREMENTS
     If the string is a number, convert it to a float and add it to a total.
     If the string is a set of letters, concatenate to the other letter strings passed in.
     If it contains a symbol, or is none of the above, do nothing and repeat the loop.
-
-
 '''
 
-
 '''These variables will be placeholders for the total and new string we will be creating'''
+new_total = 0
+new_string = ''
 
+while True:
+    user_input = input('Enter your Data: ')
 
+    # If Empty, Stop the Loop.
+    if len(user_input) == 0:
+        print('String is Empty. Stopping the Loop.')
+        break
