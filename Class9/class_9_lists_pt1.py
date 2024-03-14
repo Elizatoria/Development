@@ -3,19 +3,36 @@
 # Indexing
 planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter']
 
+# first_planet = planets[0]  # Bracket can be assigned Variable
+# print(first_planet)
+# print(planets[0])
+# print(planets[1])
+# print(planets[2])
+# print(planets[3])
+# print(planets[4])
+# print(planets[5])  # Note Error
+
 
 # Update with indexing
 colors = ['red', 'green', 'yellow', 'blue', 'orange']
-
+# print('Before List', colors)
+# colors[0] = 'black'
+# colors[1] = 'orange'
+# print('After List', colors)
 
 
 # Iterate with for loop
 animals = ['dog', 'cat', 'lion', 'tiger', 'eagle']
 
+# for a in animals:
+#     print(a)
 
 
 # Len function gives us the amount of items in a list
 modes_of_travel = ['car', 'plane', 'truck', 'train', 'boat']
+# how_many_vehicles = len(modes_of_travel)
+# print(how_many_vehicles)
+# print(len(modes_of_travel))
 
 
 '''
@@ -28,9 +45,12 @@ Example:
 planets = ["mercury", "venus", "earth", "mars"]
 0: mercury, 1: venus, 2: earth, 3: mars
 '''
-
-
-
+planets = ["mercury", "venus", "earth", "mars"]
+counter = 0
+ 
+# for p in planets:
+#     print(f"{counter}: {p}", end=", ")
+#     counter += 1
 
 
 ''' 
@@ -127,16 +147,16 @@ If it's a new pet, add it to the list. If the list already has that pet, don't a
 user_input = ''  # Initialization
 pet_name = []  # Capture Animal Names
 
-while user_input != 'stop':
-    user_input = input("Enter your Pet's Name: ")
-    if user_input == 'stop':
-        break
-    elif user_input not in pet_name:
-        pet_name.append(user_input)
-    else:
-        print(f'{user_input} is already on the List')
+# while user_input != 'stop':
+#     user_input = input("Enter your Pet's Name: ")
+#     if user_input == 'stop':
+#         break
+#     elif user_input not in pet_name:
+#         pet_name.append(user_input)
+#     else:
+#         print(f'{user_input} is already on the List')
 
-print(pet_name)
+# print(pet_name)
 
 
 ''' Removing duplicates from a list, but leaving 1'''
@@ -184,3 +204,9 @@ transaction_dates = ['3/5/2024', '3/5/2024', '5/4/2019', '2/23/2023', '5/4/2019'
 
 
 # Using sets
+
+
+
+
+# The any() function returns True if any item in an iterable are true, otherwise it returns False.
+# If the iterable object is empty, the any() function will return False.

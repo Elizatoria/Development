@@ -32,12 +32,16 @@ import re
 
 
 ''' Password requirements '''
-
-
+test_string = 'C1234567'
 # At least 8 characters long
 
 # Contains at least one uppercase letter
+one_uppercase = False
+for t in test_string:
+    if t.isupper():
+        one_uppercase = True
 
+print(f'Contains at least one uppercase?', one_uppercase)
 
 # Even better, is the any function! Tests if any of items in iterable is true
 
