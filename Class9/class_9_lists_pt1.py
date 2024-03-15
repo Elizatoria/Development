@@ -118,31 +118,36 @@ food = ['ice cream', 'pizza', 'apple', 'burger', 'cookies']
 
 # Lets add items of a list to our food list
 vegetables = ['carrots', 'asparagus', 'broccoli']
+# food.extend(vegetables)
+# print(food)
 
+# # lets find the index value for apple
+# print(f'The index for apple is', food.index('apple'))
 
-# lets find the index value for apple
+# # Lets add cereal to the 3rd spot in our list
+# food.insert(3, 'Cereal')
+# print(food)
 
-# Lets add cereal to the 3rd spot in our list
+# # Lets remove a food by index position
+# food.pop(1)
+# print(food)
 
+# # Lets remove an item with a specified value
+# food.remove('burger')  # Only removes the first instance
+# print(food)
 
-# Lets remove a food by index position
-#
+# # Lets reverse our list
+# food.reverse()
+# print(food)
 
-# Lets remove an item with a specified value
+# # Lets sort our list
+# food.sort()
+# print(food)
 
-
-# Lets reverse our list
-
-
-
-# Lets sort our list
-
-
-# Sort versus sorted()
-
-# Sorted returns a newer sorted list
-
-
+# # Sort versus sorted()
+# # Sorted returns a newer sorted list
+# new_sorted_list = sorted(food)
+# print(new_sorted_list)
 
 
 '''
