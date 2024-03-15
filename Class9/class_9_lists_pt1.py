@@ -64,16 +64,19 @@ Make sure you filter out any repeats.
 
 data = ['car', 3, True, False, 4.09, 'Tuesday']
 '''
-# Our collections
-# Append Method will allow you to
-data = ['car', 3, True, False, 4.09, 'Tuesday']
-types_list = []  # List to Hold our Types
+# # Our collections
+# # Append Method will allow you to add values to a list
+# data = ['car', 3, True, False, 4.09, 'Tuesday']
+# types_list = []  # List to Hold our Types
 
-# Looping through for types
-for d in data:
-    types_list.append(type(d))  # Grabbing types from Data, Appending to Empty List
+# # Looping through for types
+# for d in data:
+#     types_list.append(type(d))  # Grabbing types from Data, Appending to Empty List
+# print(f'Our Types List which contains duplicates', types_list)
 
-# Optional, remove repeats using sets
+# # Optional, remove repeats using sets
+# types_list = list(set(types_list))
+# print(f'Duplicates removed with Sets', types_list)
 
 
 ''' List Methods '''
@@ -91,6 +94,7 @@ remove() Removes the first item with the specified value
 reverse() Reverses the order of the list
 sort() Sorts the list
 '''
+
 
 food = ['ice cream', 'pizza', 'apple', 'burger', 'cookies']
 
