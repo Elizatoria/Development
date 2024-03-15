@@ -98,19 +98,23 @@ sort() Sorts the list
 
 food = ['ice cream', 'pizza', 'apple', 'burger', 'cookies']
 
-# lets add salad with append
+# # lets add salad with append
+# food.append('Salad')
+# print(food)
 
+# # lets remove all items with clear
+# food.clear()
+# print(food)
 
+# # let create a copy
+# new_food_list = food.copy()
+# food.append('Aspargus')
+# print(f'Copy List', new_food_list)
+# print(f'Original List with Append', food)
 
-# lets remove all items with clear
-
-
-
-# let create a copy
-
-
-# How many times does pizza appear?
-
+# # How many times does pizza appear?
+# pizza_count = food.count('pizza')
+# print(pizza_count)
 
 # Lets add items of a list to our food list
 vegetables = ['carrots', 'asparagus', 'broccoli']
