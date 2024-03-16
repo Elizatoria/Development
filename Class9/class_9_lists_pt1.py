@@ -214,11 +214,7 @@ Hint 2: You might want to make a copy of the original list to use as reference. 
 
 transaction_dates = []
 '''
-
 transaction_dates = ['3/5/2024', '3/5/2024', '5/4/2019', '2/23/2023', '5/4/2019','5/2/2023', 
                      '2/23/2023', '2/23/2024', '8/6/2019', '5/4/2019','3/5/2024','5/2/2023']
-
-
-
 
 # Using sets
