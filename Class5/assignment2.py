@@ -10,7 +10,6 @@ It doesn't have any spaces (doesn't contain " ")
 If all these conditions are met, print True. Otherwise, print False.
 To do this, use boolean statements on your string.
 Test your code on a few inputs to make sure it works!
-
 '''
 # Get input 
 email = input('Please enter your email: ')  #Getting User Email
