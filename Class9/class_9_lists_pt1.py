@@ -176,12 +176,16 @@ pet_name = []  # Capture Animal Names
 
 colors = ['blue', 'blue', 'blue', 'green', 'red', 'blue', 'blue']
 
-# Option 1 
+# # Option 1 
+# new_colors = []  # Will capture unique colors
+# for c in colors:  # Looping through Original List
+#     if c not in new_colors:
+#         new_colors.append(c)
+# print(new_colors)
 
-
-# Option 2 - Using Sets
-
-
+# # Option 2 - Using Sets
+# colors = list(set(colors))
+# print(colors)
 
 
 '''
@@ -190,8 +194,8 @@ You have a list of numbers, but it contains multiple of the number 2. Remove the
 
 num_values = [2, 3, 4, 3, 2, 2, 2, 4, 1, 3, 4, 5]
 '''
-num_values = [2, 3, 4, 3, 2, 2, 2, 4, 1, 3, 4, 5, 2, 2, 2, 2] # removes an item based on its value. If there are multiple, it removes the first item with that value.
-
+# removes an item based on its value. If there are multiple, it removes the first item with that value.
+num_values = [2, 3, 4, 3, 2, 2, 2, 4, 1, 3, 4, 5, 2, 2, 2, 2] 
 
 # Option 1
 
