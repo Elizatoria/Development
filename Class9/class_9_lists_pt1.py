@@ -222,9 +222,3 @@ transaction_dates = ['3/5/2024', '3/5/2024', '5/4/2019', '2/23/2023', '5/4/2019'
 
 
 # Using sets
-
-
-
-
-# The any() function returns True if any item in an iterable are true, otherwise it returns False.
-# If the iterable object is empty, the any() function will return False.
