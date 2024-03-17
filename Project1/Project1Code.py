@@ -15,5 +15,15 @@ The Password must contain, at least, each of the following.
 while True:
     username_input = input('Create Username: ')
     lower_test = username_input[0].islower()
+    underscore_test = ('_' in username_input)
     for u in username_input:
         alpha_num_test = username_input.isalnum()
+    if lower_test and (underscore_test or alpha_num_test) == True:
+        username += username_input
+        taken_usernames.append(username_input)
+        print('Username Made Successfully')
+        break
+    else:
+        print('Invalid Username')
+
+print(taken_usernames)
