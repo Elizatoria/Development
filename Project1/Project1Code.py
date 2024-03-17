@@ -12,4 +12,8 @@ The Password must contain, at least, each of the following.
     ● One of these characters:  !, ?, @, #, $, ^, &, *, _,  -
     ● No spaces''')
 
-# while True:
+while True:
+    username_input = input('Create Username: ')
+    lower_test = username_input[0].islower()
+    for u in username_input:
+        alpha_num_test = username_input.isalnum()
