@@ -1,16 +1,16 @@
-taken_usernames = ['admin', 'admin123', 'superuser', 'superuser123']
-username, password = '', ''
-username_input, password_input = '', ''
-uppercase_test, lowercae_test, digit_test = False, False, False
+taken_usernames = ['admin', 'admin123', 'superuser', 'superuser123']  # List of Taken Usernames
+username, password = '', ''  # Varibles to hold the Newly Made Username and Password
+username_input, password_input = '', ''  # Starting Varibles for Input
+uppercase_test, lowercae_test, digit_test = False, False, False  # Initiating the Varibles for the p Loop below
 
 print('''To sign up, create a Username and Password.
 The Username must start with a lowercase letter and only contain letters, numbers, and underscores.
 The Password must contain each of the following.
 ● At least 8 characters long
-● Contains at least one uppercase letter
-● Contains at least one lowercase letter
-● Contains at least one digit
-● Contains at least one of these characters:  !, ?, @, #, $, ^, &, *, _,  -
+● At least one uppercase letter
+● At least one lowercase letter
+● At least one digit
+● At least one of these characters: !, ?, @, #, $, ^, &, *, _,  -
 ● Doesn't contain any spaces''')
 
 # Username Creation
@@ -39,7 +39,7 @@ while True:
 
 
 # Password Creation
-while username != ' ':
+while username != ' ':  # If Username is Made and pushed into its Varible, Password Creation Starts.
     password_input = input('Create Password: ')  # Input for creating a new Password
 
 # Tests for Password
@@ -63,7 +63,20 @@ while username != ' ':
     if length_test and space_test and uppercase_test and lowercae_test and digit_test and special_test == True:  # Test to make sure Password meets all requirements
         password += password_input  # If True, adds Password Input to Password Varible.
         print('Password Made Successfully')  # If True, confirms Password was Created.
-        print(password)
         break
     else:
         print('Invalid Password')  # If Password is Invalid, informs User that Password does not meet the requirements.
+
+
+# Login Loop
+print('Sign up successful. Now Login.')
+while username != ' ' and password != ' ':  # If Username and Password is created and pushed to their varibles, Login Starts.
+    username_input = input('Enter your Username: ')  # Login Username Input
+    password_input = input('Enter your Password: ')  # Login Password Input
+
+    if username_input == username and password_input == password:  # Testing if the currently made Username and Password matches the Login Input
+        print('Login Successful')  # Telling the User that they typed in the right Username and Password
+        break
+    else:
+        print('Incorrect username or password')  # Telling the User that they typed in the wrong Username and/or Password
+        continue
