@@ -26,13 +26,26 @@ while True:
 
     # Not enough characters
     if len(user_input) >= 10:
-        print(f'{user_input} is greater than or equal to 10 characters')
+        print(f'Pass: {user_input} is greater than or equal to 10 characters.')
     else:
-        print(f'{user_input} is under 10 characters')
+        print(f'Fail: {user_input} is under 10 characters.')
+        continue
     
     # Contain at least 1 number
+    contains_num = re.search(r'\d', user_input)
+    if contains_num:
+        print(f'Pass: {user_input} has a number.')
+    else:
+        print(f'Fail: {user_input} does not have a number.')
+        continue
   
     # Contains at least 1 capital letter
+    any_uppercase = any(u.isupper() for u in user_input)
+    if any_uppercase:
+        print(f'Pass: {user_input} has a Capital Letter.')
+    else:
+        print(f'Fail: {user_input} does not have any Capital Letters.')
+        continue
 
     # Contains '@' symbol
     
