@@ -48,5 +48,18 @@ while True:
         continue
 
     # Contains '@' symbol
+    if '@' in user_input:
+        print(f'Pass: {user_input} has an \'@\' symbol.')
+    else:
+        print(f'Fail: {user_input} does not have an \'@\' symbol.')
+        continue
     
     # Contains no spaces  
+    has_space = re.search(r'\s', user_input)
+    if not has_space:
+        print(f'Pass: {user_input} has no Spaces.')
+        print('Congrats! All Tests Passed.')
+        break
+    else:
+        print(f'Fail: {user_input} has Spaces.')
+        continue
