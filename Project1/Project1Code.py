@@ -1,6 +1,7 @@
 taken_usernames = ['admin', 'admin123', 'superuser', 'superuser123']
 username, password = '', ''
 username_input, password_input = '', ''
+uppercase_test, lowercae_test, digit_test = False, False, False
 
 print('''To sign up, create a Username and Password.
 The Username must start with a lowercase letter and only contain letters, numbers, and underscores.
@@ -42,15 +43,22 @@ password_input = input('Create Password: ')  # Input for creating a new Password
 # Tests for Password
 length_test = (len(password_input) >= 8)
 space_test = ' ' not in password_input
-special_test = '!' in password_input, '?' in password_input, '@' in password_input, '#' in password_input, '$' in password_input, '^' in password_input, '&' in password_input, '*' in password_input, '_' in password_input, '-' in password_input
-print(special_test)
-print(len(special_test))
-for p in password_input:
-        uppercase_test = p.isupper()
-        lowercase_test = p.islower()
-        digit_test = p.isdigit()
 
-if length_test and space_test and (special_test[0] or uppercase_test or lowercase_test) == True:
+# Test for the Special Characters in the Password
+special_test = '!' in password_input, '?' in password_input, '@' in password_input, '#' in password_input, '$' in password_input, '^' in password_input, '&' in password_input, '*' in password_input, '_' in password_input, '-' in password_input
+for s in special_test:
+    if s == True:
+        special_test = True
+
+for p in password_input:
+    if p.isupper():
+        uppercase_test = True
+    if p.islower():
+        lowercae_test = True
+    if p.isdigit():
+        digit_test = True
+
+if length_test and space_test and uppercase_test and lowercae_test and digit_test and special_test == True:
     password += password_input
     print('Password Made Successfully')
     print(password)
