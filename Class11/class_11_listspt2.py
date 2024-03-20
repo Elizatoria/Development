@@ -1,5 +1,6 @@
 import pandas as pd
-import ntpath
+import numpy as np
+import statistics
 
 '''Here's a neat trick'''
 
@@ -133,17 +134,17 @@ lis_2 = []
 #     print()
 
 
-# With Pandas
-df = pd.DataFrame(lis)
-transposed_list = pd.DataFrame(df).transpose().values.tolist()
-print(transposed_list)
+# # With Pandas
+# df = pd.DataFrame(lis)
+# transposed_list = pd.DataFrame(df).transpose().values.tolist()
+# print(transposed_list)
 
-# print in for loop for print's carriage return 
+# # print in for loop for print's carriage return 
 
 
-# With numpy
-transposed_list = np.transpose(lis)
-print(transposed_list)
+# # With numpy
+# transposed_list = np.transpose(lis)
+# print(transposed_list)
 
 
 '''
@@ -162,10 +163,22 @@ data = [[45,56,89],[67,34,78],[23,67,34]]
 data_columns = []
 
 # Transpose data
+for i in range(len(data[0])):
+    temp_list = []
+    for my_columns in data:
+        temp_list.append(my_columns[i])
+        data_columns.append(temp_list)
+print(data_columns)
+
+# Numpy
 
 
 # Format for output
-
+print(f'''
+Column 1: Sum = {sum(data_columns[0])}, Average = {statistics.mean(data_columns[0])}
+Column 2: Sum = {sum(data_columns[1])}, Average = {statistics.mean(data_columns[1])}
+Column 3: Sum = {sum(data_columns[2])}, Average = {statistics.mean(data_columns[2])}
+      ''')
 
 # List Comprehension
 
