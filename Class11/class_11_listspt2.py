@@ -140,11 +140,14 @@ lis_2 = []
 
 # # With Pandas
 # df = pd.DataFrame(lis)
-# transposed_list = pd.DataFrame(df).transpose().values.tolist()
+# transposed_list = pd.DataFrame(df).transpose().values.tolist()  # Transposes and Converts into a List
 # print(transposed_list)
 
 # # print in for loop for print's carriage return 
-
+# for row in transposed_list:  
+#     for column in row:  
+#         print(column, end=' ')
+#     print()
 
 # # With numpy
 # transposed_list = np.transpose(lis)
@@ -162,39 +165,50 @@ Column 2: Sum = 157, Average = 52.33
 Column 3: Sum = 201, Average = 67.0
 Hint: Make a list to store the sums, and a list to store the averages.
 '''
-data = [[45,56,89],[67,34,78],[23,67,34]]
+data = [[45,56,89],
+        [67,34,78],
+        [23,67,34]]
 
-data_columns = []
+# data_columns = []
 
-# Transpose data
-for i in range(len(data[0])):
-    temp_list = []
-    for my_columns in data:
-        temp_list.append(my_columns[i])
-        data_columns.append(temp_list)
-print(data_columns)
+# # Transpose data
+# # Tranditional Method with For Loops
+# for i in range(len(data[0])):
+#     temp_list = []
+#     for my_columns in data:
+#         temp_list.append(my_columns[i])
+#     data_columns.append(temp_list)
+# print(data_columns)
 
-# Numpy
+# # Numpy Method
+# data_columns = np.transpose(data)
+# print(data_columns)
 
-
-# Format for output
-print(f'''
-Column 1: Sum = {sum(data_columns[0])}, Average = {statistics.mean(data_columns[0])}
-Column 2: Sum = {sum(data_columns[1])}, Average = {statistics.mean(data_columns[1])}
-Column 3: Sum = {sum(data_columns[2])}, Average = {statistics.mean(data_columns[2])}
-      ''')
+# # Format for output
+# print(f'''
+# Column 1: Sum = {sum(data_columns[0])}, Average = {statistics.mean(data_columns[0])}
+# Column 2: Sum = {sum(data_columns[1])}, Average = {statistics.mean(data_columns[1]):.2f}
+# Column 3: Sum = {sum(data_columns[2])}, Average = {statistics.mean(data_columns[2])}
+#       ''')
 
 
 ## List Comprehension
 
-# For Loop
 # Add veggies less than 6 letters to new list
-vegetables = ['broccoli', 'kale', 'onion', 'garlic', 'kale']
+# For Loop
+vegetables = ['broccoli', 'kale', 'onion', 'garlic']
 
-new_vegs = []
+# short_vegs = []
+# for v in vegetables:
+#     if len(v) < 6:  # If vegtable is less than 6 letters
+#         short_vegs.append(v)  # Append to short_vegs
+# print(short_vegs)
 
 # List comprehension
-vegetables = ['broccoli', 'kale', 'onion', 'garlic', 'kale']
+vegetables = ['broccoli', 'kale', 'onion', 'garlic']
+
+# new_short_vegs = [v for v in vegetables if len(v) < 6]
+# print(new_short_vegs)
 
 
 ''' 
@@ -213,10 +227,8 @@ original_list = [34, 57, 81, 92, 2, 13]
 new_list = []
 
 
-
 # With list comprehension
 original_list = [34, 57, 81, 92, 2, 13]
-
 
 
 ''' List comprehension with expressions'''
