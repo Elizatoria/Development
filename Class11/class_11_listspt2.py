@@ -117,6 +117,10 @@ new_lis = [
     [3, 6, 9]
 ]
 
+# # Star Method
+# for l in new_lis:
+#     print(*l)
+
 lis_2 = []
 
 # # For loop transposes
@@ -180,26 +184,30 @@ Column 2: Sum = {sum(data_columns[1])}, Average = {statistics.mean(data_columns[
 Column 3: Sum = {sum(data_columns[2])}, Average = {statistics.mean(data_columns[2])}
       ''')
 
-# List Comprehension
+
+## List Comprehension
 
 # For Loop
 # Add veggies less than 6 letters to new list
 vegetables = ['broccoli', 'kale', 'onion', 'garlic', 'kale']
 
+new_vegs = []
 
 # List comprehension
 vegetables = ['broccoli', 'kale', 'onion', 'garlic', 'kale']
 
 
-''' Exercise
-You are given a list of integers. Write a Python program to create a new list that only includes the even numbers from the original list.
+''' 
+Exercise
+You are given a list of integers. 
+Write a Python program to create a new list that only includes the even numbers from the original list.
 You can do this in one line with a list comprehension.
 Example:
 original_list = [34, 57, 81, 92, 2, 13]
 new_list = [34, 92, 2]
 '''
 
-''' List comprehension for conditions'''
+'''List comprehension for conditions'''
 # With a For Loop
 original_list = [34, 57, 81, 92, 2, 13]
 new_list = []
