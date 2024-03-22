@@ -226,12 +226,19 @@ new_list = [34, 92, 2]
 original_list = [34, 57, 81, 92, 2, 13]
 new_list = []
 
+# for o in original_list:
+#     if o % 2 == 0:
+#         new_list.append(o)
+# print(new_list)
 
 # With list comprehension
 original_list = [34, 57, 81, 92, 2, 13]
 
+# even_list = [o for o in original_list if o % 2 == 0]
+# print(even_list)
 
-''' List comprehension with expressions'''
+
+'''List comprehension with expressions'''
 
 # Lets add 5 to every item in this list
 numbers = [0, 2, 3, 8, 9, 11, 20]
