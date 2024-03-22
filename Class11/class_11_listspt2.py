@@ -243,17 +243,24 @@ original_list = [34, 57, 81, 92, 2, 13]
 # Lets add 5 to every item in this list
 numbers = [0, 2, 3, 8, 9, 11, 20]
 
+# plus_five = [n + 5 for n in numbers]
+# print(plus_five)
+
 
 # We can add two lists
 first_list = [1, 2, 3]
 second_list = [4, 5, 6]
 
+# third_list = [x for x in first_list] + [x for x in second_list]
+# print(third_list)
 
 
 # Multiply items from two lists
 list1 = [1, 2, 3, 4, 5]
 list2 = [10, 20, 30, 40, 50]
 
+# product_list = [list1[i] * list2[i] for i in range(len(list1))]
+# print(product_list)
 
 
 '''
@@ -265,14 +272,19 @@ Example:
 over_60_years = ['Dominic', 'Linda', 'Simone', 'Swathi', 'Olaf']
 over_5_purchases = ['Finn', 'Simone', 'Aaron', 'Dominic']
 Output: ['Dominic', 'Simone']
-
 '''
 
 over_60_years = ['Dominic', 'Linda', 'Simone', 'Swathi', 'Olaf']
 over_5_purchases = ['Finn', 'Simone', 'Aaron', 'Dominic']
 
-customer_discount = []
+# customer_discount = []
 
-# For Loop
+# # For Loop
+# for c in over_60_years:
+#     if c in over_5_purchases:
+#         customer_discount.append(c)
+# print(customer_discount)
 
-# List comprehension
+# # List comprehension
+# customer_discount = [c for c in over_60_years if c in over_5_purchases]
+# print(customer_discount)
