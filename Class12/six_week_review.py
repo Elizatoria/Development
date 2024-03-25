@@ -235,11 +235,11 @@ num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 vowels = 'aeiou'
 my_string = 'abracadabra'
 
-for m in my_string:
-    if m in vowels:
-        print(f'{m} is a Vowel')
-    else:
-        print(f'{m} is a Consonant')
+# for m in my_string:
+#     if m in vowels:
+#         print(f'{m} is a Vowel')
+#     else:
+#         print(f'{m} is a Consonant')
 
 
 # In a while loop, ask the user for their favorite animal. 
@@ -248,10 +248,14 @@ for m in my_string:
 
 while True:
     fav_animal = input('Enter your Favorite Animal: ')
-    fav_animal.strip()
-    print(fav_animal)
-
-
+    fav_animal = fav_animal.strip()
+    fav_animal = fav_animal.casefold()
+    if fav_animal == 'giraffe':
+        print(f'Congratulations, your favorite animal is {fav_animal}. Loop is Ended.')
+        break
+    else:
+        print(f'Try again!')
+        continue
 
 
 # In a while loop, ask the user for a word in all lowercase. 
