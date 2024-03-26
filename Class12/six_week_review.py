@@ -14,7 +14,6 @@ three_cheers = greeting * 3
 
 
 '''Arithmetic Operators'''
-
 # # add 100 to 50
 # print(100 + 50)
 
@@ -62,7 +61,6 @@ three_cheers = greeting * 3
 
 
 '''Comparison Operators'''
-
 # # Is 5 greater than 7?
 # print(5 > 7)
 
@@ -86,7 +84,6 @@ three_cheers = greeting * 3
 
 
 '''Strings'''
-
 # Check if the following string is lowercase, use meaningful variable names
 day = 'tuesday'
 check_lowercase = day.islower()
@@ -246,53 +243,75 @@ my_string = 'abracadabra'
 # If the word is equal to giraffe, we will tell the user congratulations and end the loop. 
 # Otherwise we will keep prompting the user.
 
-while True:
-    fav_animal = input('Enter your Favorite Animal: ')
-    fav_animal = fav_animal.strip()
-    fav_animal = fav_animal.casefold()
-    if fav_animal == 'giraffe':
-        print(f'Congratulations, your favorite animal is {fav_animal}. Loop is Ended.')
-        break
-    else:
-        print(f'Try again!')
-        continue
+# while True:
+#     fav_animal = input('Enter your Favorite Animal: ')
+#     fav_animal = fav_animal.strip()
+#     fav_animal = fav_animal.casefold()
+#     if fav_animal == 'giraffe':
+#         print(f'Congratulations, your favorite animal is {fav_animal}. Loop is Ended.')
+#         break
+#     else:
+#         print(f'Try again!')
+#         continue
 
 
 # In a while loop, ask the user for a word in all lowercase. 
 # If the string is not all lowercase, reprompt the user until the condition is met.
-
 # HINT The isupper() method returns True if all the characters are in upper case, otherwise False.
 
 
         
-# Create a while loop, We will ask the user for a string, the first character of the string must be a number, the last character must be a capital letter to pass testing. Otherwise the user must keep trying.
+# Create a while loop.
+# We will ask the user for a string. 
+# The first character of the string must be a number and the last character must be a capital letter to pass testing. 
+# Otherwise the user must keep trying.
+test_word = '1helloH'
 
-# test_word = '1helloH'
+first_char = test_word[0]
+# print(first_char)
+
+last_char = test_word[len(test_word)-1]
+# print(last_char)
+
+# while True:
+#     user_input = input('Please Enter a String that begins with a Number and ends with a Capital Letter: ')
+#     user_input = user_input.strip()
+#     if user_input[0].isnumeric() and user_input[len(user_input)-1].isupper():
+#         print(f'Passed the Test!')
+#         break
+#     else:
+#         print('Try Again!')
+#         continue
 
 
-
-''' Lists '''
-
+'''Lists'''
 # Loop through the full list, and copy all the items in that list into the empty list
 full_list = ['Move', 'me', 'to', 'an', 'empty', 'list', 'with', 'append']
 empty_list = []
 
+# for f in full_list:
+#     if f not in empty_list:
+#         empty_list.append(f)
+# print(empty_list)
+
 
 # Lets practice some more indexing
-
 my_super_list = [['superman', 'wonderwoman','batman'],['spiderman','captain america','ironman'],['aquaman']]
 
 # Create a variable and assign it to wonderwoman via indexing
-
+wonderwoman = my_super_list[0][1]
+# print(wonderwoman)
 
 # Create a variable and assign it to spiderman via indexing
-
+spiderman = my_super_list[1][0]
+# print(spiderman)
 
 # Create a variable and assign it to aquaman via indexing
+aquaman = my_super_list[2][0]
+# print(aquaman)
 
 
 # Using a for loop, create a new list that contains any students without the letter a
-
 # For Loop
 students = ['Anna', 'Dana', 'Sarah', 'Farley', 'Oleg', 'Gionni', 'Brenetta']
 
