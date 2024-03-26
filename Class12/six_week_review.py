@@ -259,6 +259,15 @@ my_string = 'abracadabra'
 # If the string is not all lowercase, reprompt the user until the condition is met.
 # HINT The isupper() method returns True if all the characters are in upper case, otherwise False.
 
+# while True:
+#     lowercase = input('Enter a Word in all Lowercase Letters: ')
+#     lowercase = lowercase.strip()
+#     if lowercase.islower():
+#         print(f"Good Job. You're word is {lowercase}.")
+#         break
+#     else:
+#         print('Try Again!')
+#         continue
 
         
 # Create a while loop.
@@ -326,7 +335,7 @@ students = ['Anna', 'Dana', 'Sarah', 'Farley', 'Oleg', 'Gionni', 'Brenetta']
 # create a new list with 1 added to each number (no append needed)
 
 
-''' Ranges '''
+'''Ranges'''
 
 '''
 Create the following output from the following two lists
@@ -338,14 +347,13 @@ Word is word processing software.
 Excel is spreadsheet software
 Powerpoint is presentation software
 Access is database software
-
 '''
 
 software = ['Word', 'Excel', 'Powerpoint', 'Access']
 purpose = ['word processing', 'spreadsheet', 'presentation', 'database']
 
 
-''' Python Exercises'''
+'''Python Exercises'''
 
 '''
 Write a Python program that accepts a sequence of comma-separated numbers from the user and generates a list those numbers.
@@ -365,7 +373,6 @@ color_list = ["Red","Green","White" ,"Black"]
 Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
 Sample value of n is 5
 Expected Result : 615
-
 '''
 
 
@@ -375,11 +382,9 @@ Write a Python program that concatenates all elements in a list into a string an
 my_list = [1, 2, 3, 4, 5]
 '''
 
-'''
-Write a Python program to sum the first n positive integers.
-'''
+
+'''Write a Python program to sum the first n positive integers.'''
 
 
 
-'''  Write a Python program to calculate sum of digits of a number. '''
-
+'''Write a Python program to calculate sum of digits of a number.'''
