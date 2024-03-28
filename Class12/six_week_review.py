@@ -324,15 +324,22 @@ aquaman = my_super_list[2][0]
 # For Loop
 students = ['Anna', 'Dana', 'Sarah', 'Farley', 'Oleg', 'Gionni', 'Brenetta']
 
+# Answer is in Six Week Review Part 2
 
 # List Comprehension - new_list = [x for x in original_list if condition]
 students = ['Anna', 'Dana', 'Sarah', 'Farley', 'Oleg', 'Gionni', 'Brenetta']
+
+# Answer is in Six Week Review Part 2
 
 
 # List Comprehension - new_list = [expression for x in original_list]
 # original_list = [1, 2, 3, 4, 5, 6]
 
+# Answer is in Six Week Review Part 2
+
 # create a new list with 1 added to each number (no append needed)
+
+# Answer is in Six Week Review Part 2
 
 
 '''Ranges'''
@@ -352,6 +359,8 @@ Access is database software
 software = ['Word', 'Excel', 'Powerpoint', 'Access']
 purpose = ['word processing', 'spreadsheet', 'presentation', 'database']
 
+# Answer is in Six Week Review Part 2
+
 
 '''Python Exercises'''
 
@@ -360,6 +369,7 @@ Write a Python program that accepts a sequence of comma-separated numbers from t
 
 # Try the split string method
 '''
+# Answer is in Six Week Review Part 2
 
 
 '''
@@ -368,23 +378,30 @@ color_list = ["Red","Green","White" ,"Black"]
 '''
 color_list = ["Red","Green","White" ,"Black"]
 
+# Answer is in Six Week Review Part 2
+
 
 '''
 Write a Python program that accepts an integer (n) and computes the value of n+nn+nnn.
 Sample value of n is 5
 Expected Result : 615
 '''
+# Answer is in Six Week Review Part 2
 
 
 '''
 Write a Python program that concatenates all elements in a list into a string and returns it.
-
 my_list = [1, 2, 3, 4, 5]
 '''
+# Answer is in Six Week Review Part 2
 
 
 '''Write a Python program to sum the first n positive integers.'''
 
+# Answer is in Six Week Review Part 2
 
 
 '''Write a Python program to calculate sum of digits of a number.'''
+
+# Problem is also in Six Week Review Part 2
+# Can Solve on Own Time

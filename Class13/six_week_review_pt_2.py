@@ -96,7 +96,6 @@ Expected Result : 615
 
 '''
 Using a for loop and a conditional, write a Python program that concatenates all elements in a list into a string.
-
 my_list = [1, 2, 3, 4, 5]
 new_string = '12345'
 '''
@@ -112,7 +111,7 @@ new_string = '12345'
 
 
 '''
-Write a Python program to sum the first n positive integers..
+Write a Python program to sum the first n positive integers.
 
 Example: 10
 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
