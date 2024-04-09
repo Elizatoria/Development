@@ -103,12 +103,16 @@ You can still loop through a set with a for loop.
 '''
 # Ways to create a set
 i_am_empty = set()
+
 # print(i_am_empty)
 # print(type(i_am_empty))
 
+
 # What am I?
 check_my_type = {}
+
 # print(type(check_my_type))
+
 
 # Pass in a list
 my_fav_colors_list = ['green', 'blue', 'red']
@@ -120,7 +124,9 @@ my_fav_colors_list = ['green', 'blue', 'red']
 
 # Unordered
 my_unordered_set = {'blue', 'green', 'red', 'orange'}
-# print(my_unordered_set)
+
+# print(my_unordered_set)  # Each time it prints, it changes order.
+
 
 # Unchangeable
 my_unchangeable_set = {'hello', 'welcome', 'to', 'newyork'}
@@ -132,13 +138,18 @@ my_unchangeable_set = {'hello', 'welcome', 'to', 'newyork'}
 # Unindexed
 my_unindexable_set = {'I', 'cant', 'be', 'indexed'}
 
-# Break up a string
+# print(my_unindexable_set[2])  # Gives Error because Sets can't be indexed
+
+
+# # Break up a string
+# first_name = set('John')  # Breaks up a String into a List
+# print(first_name)
 
 
 # No duplicates allowed
-# my_cars = {'chevy', 'toyota', 'ford', 'ford', 'honda', 'honda'}
+my_cars = {'chevy', 'toyota', 'ford', 'ford', 'honda', 'honda'}
+# print(my_cars)
 
-# No duplicates - How did we solve this problem before?
 
 '''
 8. Exercise: Removing All Duplicates
@@ -146,48 +157,76 @@ You have a list storing important data for your company, but it contains some du
 Go through your list and remove all the duplicates. When you're done, each item should appear in 
 the list exactly once.
 '''
-''' With a for loop and appending'''
-
+# No duplicates - How did we solve this problem before?
+'''With a for loop and appending'''
 #original list
 # states = ['alaska', 'alaska', 'alaska', 'alabama', 'alabama', 'new york', 'new york', 'new york']
 
+# no_duplicate_states = []
+
+# for s in states:
+#     if s not in no_duplicate_states:
+#         no_duplicate_states.append(s)
+# print(no_duplicate_states)
 
 
-''' With sets and returning a list '''
-
+'''With sets and returning a list'''
 states = ['alaska', 'alaska', 'alaska', 'alabama', 'alabama', 'new york', 'new york', 'new york']
 
+# new_states = list(set(states))
+# print(new_states)
+
+
 # We can loop through sets
-# top_ten_movies = {'shawshank redemption', 'avatar', 'avengers', 'its a wonderful life'}
+top_ten_movies = {'Shawshank Redemption', 'Avatar', 'Avengers', 'Its a Wonderful Life'}
+
+# for t in top_ten_movies:
+#     print(t)
 
 
-# # Let's add silver .add()
-# colors = {'blue', 'green', 'red'}
+# Let's add silver .add()
+colors = {'blue', 'green', 'red'}
+
 # colors.add('silver')
 # print(colors)
 
 
-# # Lets clear all our items .clear()
-# transportation = {'cars', 'bikes', 'plane'}
+# Lets clear all our items .clear()
+transportation = {'cars', 'bikes', 'plane'}
+
 # transportation.clear()
 # print(transportation)
 
 
-# # Lets create a copy .copy()
-# sitcoms = {'friends', 'seinfeld', 'honeymooners'}
+# Lets create a copy .copy()
+sitcoms = {'friends', 'seinfeld', 'honeymooners'}
+
 # comedy = sitcoms.copy()
 # print(sitcoms)
 # print(comedy)
 
 
 # Remove vermont from our set
-# states = {'california', 'new york', 'vermont', 'connecticut'}
+states = {'california', 'new york', 'vermont', 'connecticut'}
+
+# states.remove('vermont')
+# print(states)
 
 
-
+'''Break'''
 # Difference - What's different?
 student_set = {'oleg', 'anna', 'farley'}
 student_set_2 = {'oleg', 'anna', 'brenetta'}
+
+# result = student_set - student_set_2
+# result2 = student_set_2 - student_set
+# print(result)
+# print(result2)
+
+# result = student_set.difference(student_set_2)
+# result2 = student_set_2.difference(student_set)
+# print(result)
+# print(result2)
 
 
 # Intersect - What do we have in common?
@@ -258,7 +297,7 @@ The set of employees that know Python or JavaScript, but not both
  
 # put our error messages in a tuple
 
-'''Break'''
+'''Space'''
 
 # instructions
  
