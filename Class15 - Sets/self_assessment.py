@@ -13,3 +13,5 @@ my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 10. Remove the duplicates from a list with values [4, 4, 4, 3, 2, 1, 4, 9]
 '''
 
+'''9. Take a word from the user and let them know how many vowels are in the word'''
+is_a_vowel = input('Put in your Word: ')
