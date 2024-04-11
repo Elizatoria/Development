@@ -15,3 +15,9 @@ my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 '''9. Take a word from the user and let them know how many vowels are in the word'''
 is_a_vowel = input('Put in your Word: ')
+counter = 0
+
+for v in is_a_vowel:
+    if v in 'aeiou':
+        counter += 1
+print(counter)
