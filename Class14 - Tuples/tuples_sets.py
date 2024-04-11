@@ -349,8 +349,28 @@ while True:
         print(error_messages[0])
         continue
 
+    # Logic for Handling Sets
+    both_languages = python_devs.intersection(js_devs)
+    know_js_not_python = js_devs.difference(python_devs)
+    know_python_or_js_not_both = js_devs.symmetric_difference(python_devs)
  
+    #If sets are empty, display no data for User
+    if both_languages == set():
+        both_languages = 'No Data'
+
+    if know_js_not_python == set():
+        know_js_not_python = 'No Data'
+
+    if know_python_or_js_not_both == set():
+        know_python_or_js_not_both = 'No Data'
+
 # print statement, formatted strings, to display the set results
+    print('RESULTS')
+    print('--------------------')
+    print(f'The following Developers know both Languages: {both_languages}')
+    print(f'The following Developers know JavaScript but not Python: {know_js_not_python}')
+    print(f'The following Developers know Python or JavaScript but not Both: {know_python_or_js_not_both}')
+    print('--------------------')
 
 
 '''Was Posted in Group Chat on April 8, 2024'''
