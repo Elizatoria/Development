@@ -364,50 +364,10 @@ while True:
     if know_python_or_js_not_both == set():
         know_python_or_js_not_both = 'No Data'
 
-# print statement, formatted strings, to display the set results
+    # print statement, formatted strings, to display the set results
     print('RESULTS')
     print('--------------------')
     print(f'The following Developers know both Languages: {both_languages}')
     print(f'The following Developers know JavaScript but not Python: {know_js_not_python}')
     print(f'The following Developers know Python or JavaScript but not Both: {know_python_or_js_not_both}')
     print('--------------------')
-
-
-'''Was Posted in Group Chat on April 8, 2024'''
-# initialize our variables
- 
-# instructions
- 
-# inputs
- 
-# while loop
- 
-# print statement, formatted strings
- 
-# sets
- 
-# break keyword, continue, if statements
- 
-# string methods
- 
-# put our error messages in a tuple
-
-'''Space'''
-
-# instructions
- 
-# initialize our variables
- 
-# put our error messages in a tuple
- 
-# while loop
- 
-# inputs
- 
-# string methods for cleanup if needed .strip(), .title()
- 
-# if statements, break keyword, continue,
- 
-# sets
- 
-# print statement, formatted strings, to display the set results
