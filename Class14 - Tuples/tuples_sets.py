@@ -315,18 +315,40 @@ To add a JavaScript Developer, type 'js' when Prompted.
 ''')
 
 # initialize our variables
- 
+python_devs, js_devs = set(), set()
+dev_type_input, dev_name_input = '', ''
+
 # put our error messages in a tuple
+error_messages = ('Invalid Input, Please Try Again.', 'Thank You. Have a Nice Day.')
  
 # while loop
+while True:
+    # inputs
+    dev_type_input = input("Type 'p' for Python Developer, 'js' for JavaScript Developer, or 'stop' to exit program: ").lower()
+    # if statements, break keyword, continue
+    # Gives User an Exit
+    if dev_type_input == 'stop':
+        print(error_messages[1])
+        break
  
-# inputs
- 
-# string methods for cleanup if needed .strip(), .title()
- 
-# if statements, break keyword, continue,
- 
-# sets
+    # Get Dev Type, Add to Sets, and Offer an Exit
+    if dev_type_input == 'p' or dev_type_input == 'js':
+        # inputs
+        dev_name_input = input("Enter Developer Name: ").lower()
+
+        if dev_name_input == 'stop':
+            print(error_messages[1])
+            break
+        # string methods for cleanup if needed .strip(), .title()
+        # sets
+        elif dev_type_input == 'p':
+            python_devs.add(dev_name_input.title())
+        else:
+            js_devs.add(dev_name_input.title())
+    else:
+        print(error_messages[0])
+        continue
+
  
 # print statement, formatted strings, to display the set results
 
