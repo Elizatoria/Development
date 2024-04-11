@@ -218,12 +218,12 @@ states = {'california', 'new york', 'vermont', 'connecticut'}
 student_set = {'oleg', 'anna', 'farley'}
 student_set_2 = {'oleg', 'anna', 'brenetta'}
 
-# result = student_set - student_set_2
+# result = student_set - student_set_2  #Operator
 # result2 = student_set_2 - student_set
 # print(result)
 # print(result2)
 
-# result = student_set.difference(student_set_2)
+# result = student_set.difference(student_set_2)  # Method
 # result2 = student_set_2.difference(student_set)
 # print(result)
 # print(result2)
@@ -233,6 +233,12 @@ student_set_2 = {'oleg', 'anna', 'brenetta'}
 my_schedule = {'mon', 'wed', 'thurs'}
 dana_schedule = {'wed', 'fri', 'sat'}
 
+# result = my_schedule & dana_schedule  # Operator
+# print(result)
+
+# result2 = my_schedule.intersection(dana_schedule)  # Method
+# print(result2)
+
 
 # Union - uniquely list every pet
 sarah_pets = {'dog', 'cat', 'bird'}
@@ -240,11 +246,22 @@ isaiah_pets = {'chickens', 'dog', 'fish'}
 khadaziah_pets = {'bird', 'dog', 'fish'}
 brenetta_pets = {'turtle'}
 
+# result = sarah_pets | isaiah_pets | khadaziah_pets | brenetta_pets  # Operator
+# print(result)
+
+# result2 = sarah_pets.union(isaiah_pets, khadaziah_pets, brenetta_pets)  # Method
+# print(result2)
+
 
 # Symmetric difference - Items outside of matching items
-
 my_books = {'catcher in the rye', 'richest man in babylon'}
 her_books = {'catcher in the rye', 'richest man in babylon', 'sounder'}
+
+# result = my_books ^ her_books  # Operator
+# print(result)
+
+# result2 = my_books.symmetric_difference(her_books)  # Method
+# print(result2)
 
 
 '''
@@ -258,6 +275,16 @@ over_60_years = {'Dominic', 'Linda', 'Simone', 'Swathi', 'Olaf'}
 over_5_purchases = {'Finn', 'Simone', 'Aaron', 'Dominic'}
 Output: {'Dominic', 'Simone'}
 '''
+over_60_years = {'Dominic', 'Linda', 'Simone', 'Swathi', 'Olaf'}
+over_5_purchases = {'Finn', 'Simone', 'Aaron', 'Dominic'}
+
+# discounts = []
+
+# for o in over_60_years:
+#     if o in over_5_purchases:
+#         discounts.append(o)
+# print(discounts)
+
 # Solve with an intersection - solve with 1 or 2 lines of code
 over_60_years = {'Dominic', 'Linda', 'Simone', 'Swathi', 'Olaf'}
 over_5_purchases = {'Finn', 'Simone', 'Aaron', 'Dominic'}
@@ -277,8 +304,34 @@ The set of employees that know both Python and JavaScript
 The set of employees that know JavaScript, but not Python
 The set of employees that know Python or JavaScript, but not both
 '''
+'''Solution April 10, 2024'''
+# instructions
+print('''
+JS and Python Developer Tracker
+Instructions
+Input 's' or 'stop' at anytime to exit Program.
+To add a Python Developer, type 'p' when Prompted. 
+To add a JavaScript Developer, type 'js' when Prompted. 
+''')
+
+# initialize our variables
+ 
+# put our error messages in a tuple
+ 
+# while loop
+ 
+# inputs
+ 
+# string methods for cleanup if needed .strip(), .title()
+ 
+# if statements, break keyword, continue,
+ 
+# sets
+ 
+# print statement, formatted strings, to display the set results
 
 
+'''Was Posted in Group Chat on April 8, 2024'''
 # initialize our variables
  
 # instructions
