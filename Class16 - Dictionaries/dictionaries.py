@@ -59,7 +59,8 @@ dog_info = dog.keys()
 
 
 # Lets use clear method to remove all elements
-# print(dog.clear())
+# dog.clear()
+# print(dog)
 
 
 # Lets use get method to get a key value
@@ -147,6 +148,24 @@ my_values = [4, 10, 30]
 # print(my_dict)
 
 
+'''Combing Lists: The Zip Function
+The zip() function takes two (or more) lists as inputs and returns an object that contains a list of pairs
+Ex.
+names = [“Jenny”, “Alexus”, “Sam”, “Grace”]
+heights = [61, 70, 67, 64]
+names_and_heights = zip(names, heights)
+# you have to convert the zip object into a list to use it
+converted_list = list(names_and_heights)
+print(converted_list)
+Output:
+[(“Jenny”, 61), (“Alexus”, 70), (“Sam”, 67), (“Grace”, 64)]
+Notice two things:
+	1.	Our data set has been converted from a zip memory object to an actual list (denoted by [])
+	2.	Our inner lists don’t use square brackets [] around the values. 
+    The is because they have been converted into types (an immutable type of list)
+'''
+
+
 '''
 Exercise
 
@@ -156,19 +175,24 @@ Hint: Use the items() method
 '''
 words = {"color":"blue", "veggie":"radish", "vehicle": "bike", "mood": "happy", "pet":"cat"}
 
+# print(words.items())
+
+# for w, c in words.items():
+#     print(w, c)
 
 
 # As datasets, we can use bracket notation
-
 choices = {"flavors":['strawberry', 'vanilla', 'orange'],
            "sizes":['large', 'medium', 'small']}
+
+# print(choices['flavors'][0])
+# print(choices['sizes'][2])
 
 
 '''
 Exercise
 Create a dictionary for an automobile including make, model, year, number of doors, and number of cylinders.
 '''
-
 # car = {"make":"honda", 
 #        "model":"accord", 
 #        "year":2011 , 
@@ -177,26 +201,47 @@ Create a dictionary for an automobile including make, model, year, number of doo
 
 # print(car)
 
+
 '''
 In statistics, the mode is the value that appears most frequently in a dataset.
 For example, in this list: [1,2,4,1,3,4,1,1] the mode is 1
 Write some code that uses a dictionary to calculate the mode of a list.
-
 '''
-
 my_list_items = [1,2,4,1,3,4,1,1] # our list
+
+output = {}
+
+# for m in my_list_items:
+#     if m not in output:
+#         output[m] = 1  # Add it Intitially
+#     else:
+#         output[m] += 1  # Update the Count
+# print(output)
+
+# Shorter Version
+# for m in my_list_items:
+#     output[m] = my_list_items.count(m)
+# print(output)
 
 
 # Statistics module
+use_stats_module = [1,2,4,1,3,4,1,1,1,1,1,1,1,1,1,1,10,10,10,10]
+result = mode(use_stats_module)
+print(result)
 
 
 # Looping through and adding 
 incomes = {"apple": 5600.00, "orange": 3500.00, "banana": 5000.00}
 
+# total_income = 0.00
+# for i in incomes.values():
+#     total_income += i  # Adding the income each time through
+# print(total_income)
 
 
 '''
-Suppose you have a list of employee records that contain the following information for each employee: name, job title, salary. The records are stored as a list of dictionaries.
+Suppose you have a list of employee records that contain the following information for each employee: name, job title, salary. 
+The records are stored as a list of dictionaries.
 Use this list to create a dictionary where the keys are the job titles and the values are the average salaries for each job title.
 Example:
 records = [{'name': 'Bob', 'title': 'manager', 'salary': 50000},\
@@ -210,16 +255,3 @@ records = [{'name': 'Bob', 'title': 'manager', 'salary': 50000},\
            {'name': 'David', 'title': 'developer', 'salary': 65000},
            {'name': 'Alice', 'title': 'consultant', 'salary': 25000},\
            {'name': 'David', 'title': 'consultant', 'salary': 40000}]
-
-
-
-
-
-
-
-
-
- 
-
-
-
