@@ -237,21 +237,3 @@ incomes = {"apple": 5600.00, "orange": 3500.00, "banana": 5000.00}
 # for i in incomes.values():
 #     total_income += i  # Adding the income each time through
 # print(total_income)
-
-
-'''
-Suppose you have a list of employee records that contain the following information for each employee: name, job title, salary. 
-The records are stored as a list of dictionaries.
-Use this list to create a dictionary where the keys are the job titles and the values are the average salaries for each job title.
-Example:
-records = [{'name': 'Bob', 'title': 'manager', 'salary': 50000},\
-           {'name': 'Alice', 'title': 'developer', 'salary': 60000},\
-           {'name': 'David', 'title': 'developer', 'salary': 65000}]
-Output: {'manager': 50000, 'developer': 62500}
-'''
-
-records = [{'name': 'Bob', 'title': 'manager', 'salary': 50000},\
-           {'name': 'Alice', 'title': 'developer', 'salary': 60000},\
-           {'name': 'David', 'title': 'developer', 'salary': 65000},
-           {'name': 'Alice', 'title': 'consultant', 'salary': 25000},\
-           {'name': 'David', 'title': 'consultant', 'salary': 40000}]
