@@ -81,5 +81,5 @@ https://jsonplaceholder.typicode.com/
 This website provides free api testing. 
 Lets leverage python's request module to see if we can do a get request against this data
 '''
-my_response = requests.get('https://jsonplaceholder.typicode.com/todos')
-print(my_response.text)
+# my_response = requests.get('https://jsonplaceholder.typicode.com/todos/1')
+# print(my_response.text)

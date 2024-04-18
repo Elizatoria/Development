@@ -1,4 +1,4 @@
-print('Imported Algorithms Modules')
+print('Imported my Algorithms Modules')
 
 def find_even(num):
     '''Return True if Even, False if Odd'''

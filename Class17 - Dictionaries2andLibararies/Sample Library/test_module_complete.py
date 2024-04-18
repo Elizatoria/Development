@@ -1,6 +1,6 @@
 import algorithms_modules
 
-'''Module will return Boolean for Even or Odd'''
+'''Module will return Boolean for Even = True or Odd = False'''
 
 num = 8
 result = algorithms_modules.find_even(num)
