@@ -16,7 +16,8 @@ records = [{'name': 'Bob', 'title': 'manager', 'salary': 50000},\
            {'name': 'David', 'title': 'developer', 'salary': 65000},
            {'name': 'Joe', 'title': 'consultant', 'salary': 25000},\
            {'name': 'Susan', 'title': 'consultant', 'salary': 40000},
-            {'name': 'Isaiah', 'title': 'sales', 'salary': 120000}]
+            {'name': 'Isaiah', 'title': 'sales', 'salary': 120000},
+            {'name': 'Brenetta', 'title': 'sales', 'salary': 150000}]
 
 # Our Output Dictionaries
 title_salary_dict = {}  # Capture Titles and Salary Totals
@@ -38,4 +39,13 @@ for r in records:
 
 # Lets take a look at our Output
 print(f'All Titles and sum of Salaries: ', title_salary_dict)
-print(f'Titles ', title_count_dict)
+print(f'Titles and the count of Employees: ', title_count_dict)
+
+result = {s:float(title_salary_dict[s])/title_count_dict[s] for s in title_salary_dict}
+print(result)
+
+
+# Pandas Solution
+df = pd.DataFrame.from_records(records)
+result = df.groupby('title')['salary'].mean()
+print(result)
