@@ -80,6 +80,7 @@ test_list2 = [3,6,7,9,10,11,2]
 # print(consonants)
 
 
+'''Class 20'''
 '''
 Exercise
 Write a Python function called get_stats that takes in a list of numbers and returns the following three values: 
@@ -93,8 +94,13 @@ Mode: 5
 '''
 my_list = [1,2,4,5,5]
 
-def get_stats():
-    pass
+# def get_stats(my_list: list):
+#     my_mean = statistics.mean(my_list)
+#     my_median = statistics.median(my_list)
+#     my_mode = statistics.mode(my_list)
+#     return f'Mean: {my_mean}\nMedian: {my_median}\nMode: {my_mode}'  # Can Return Formatted String
+
+# print(get_stats(my_list))  # Function Call in Print Statement
 
 
 '''Global variables'''
@@ -114,28 +120,44 @@ def get_stats():
 # change_x()
 # print("Programming is", x)
 
+
 '''
-A lambda is a small anonymous function. It can take any number of arguments, but it can only have one expression, which is returned.
+A lambda is a small anonymous function. 
+It can take any number of arguments, but it can only have one expression, which is returned.
 Syntax: lambda arguments : expression
 '''
+# # Function to add two numbers
+# def add_two(x, y):
+#     return x + y
 
-# Function to add two numbers
+# print(add_two(5, 7))
+
+# # Written as a Lambda
+# add_two = lambda x, y: x + y
+
+# print(add_two(5, 7))
+# print((add_two)(5, 7))
 
 
-
-# Written as a Lambda
-
-
-
-
+'''Lambda Examples'''
 # Write the following functions as Lambdas
-
 def greeting(fname):
     print(f'Hello, {fname}')
+
+# greetings = lambda fname: f'Hello, {fname}'
+# print(greetings('Ariel'))
+
+fname = 'Ariel'
+lname = 'Elita'
+
+# print((lambda fname, lname: f'Hello, {fname} {lname}')(fname, lname))
 
 
 def double_me(num):
     return num + num
+
+# double_num = lambda num: num + num
+# print(double_num(5))
 
 
 '''
@@ -143,9 +165,8 @@ Exercise
 Write a lambda that computes the n-th power of a number, given two arguments, num and n.
 Now, write a function that is equivalent to the lambda.
 '''
-
-
-
+# power = lambda num, n: num ** n
+# print(power(2, 6))
 
 
 '''Higher Order Functions
@@ -153,23 +174,34 @@ These are functions that may accept a function as an argument or return a functi
 In Python, reduce(), map() and filter() are some of the most important higher-order functions. 
 When combined with simpler functions, they can be used to execute complex operations.
 
-filter - The filter() method filters the given sequence with the help of a function that tests each element in the sequence to be true or not. 
+filter:
+The filter() method filters the given sequence with the help of a function that tests each element in the sequence to be true or not. 
 
-map - returns a map object(which is an iterator) of the results after applying the given function to each item of a given iterable (list, tuple etc.)
-
+map:
+Returns a map object(which is an iterator) of the results after applying the given function to each item of a given iterable 
+(list, tuple etc.)
 '''
+# def even_function(n):
+#     return n % 2 == 0  # Returns True or False if Even or Odd
+# n = 6
+# print(even_function(n))
+
+
 # Let's use the filter function to find the even numbers in a list
-
-
-
 my_list = [0,1,2,3,4,5,6,7,8,9,10]
 
-# Triple Me! Triple the numbers in this lsit
+# even_num_filter = filter(lambda n: n % 2 == 0, my_list)
+# print(list(even_num_filter))
 
+
+# Triple Me! Triple the numbers in this lsit
 triple_me = [0,1,2,3,4,5,6]
 
-# Lambda with sort
+# result = map(lambda n: n * 3, triple_me)
+# print(list(result))
 
+
+# Lambda with sort
 students = [{"name":"Kim","grade":98},
             {"name":"Joe","grade":65},
             {"name":"Ted","grade":93},
@@ -177,10 +209,20 @@ students = [{"name":"Kim","grade":98},
             {"name":"Torrie","grade":65},
             {"name":"Simon","grade":78}]
 
+# students_by_name = sorted(students, key = lambda s: s['name'])
+# print(students_by_name)
+
+# students_by_name_reversed = sorted(students, key = lambda s: s['name'], reverse=reversed)
+# print(students_by_name_reversed)
+
+# students_by_grade = sorted(students, key = lambda s: s['grade'])
+# print(students_by_grade)
+
+# students_by_grade_reversed = sorted(students, key = lambda s: s['grade'], reverse=reversed)
+# print(students_by_grade_reversed)
 
 
 '''
-Assignment 6
 Write a simple function that returns a person's net worth. Here are your requirements:
 Docstring which includes what function does and information on your parameters (brief)
 Function name - net_worth
@@ -188,3 +230,12 @@ parameters - assets, liabilities
 Must contain type hinting for the parameters as well as what the function will be returning
 Call the function in a print statement with needed arguments
 '''
+# def net_worth(assets: float, liabilities: float) -> float:
+#     '''
+#     Returns User's Networth
+#     -User's Assets
+#     -User's Liabilities
+#     '''
+#     return assets - liabilities
+
+# print(net_worth(20000, 10000))
