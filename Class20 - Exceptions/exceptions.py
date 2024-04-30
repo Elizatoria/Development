@@ -155,16 +155,18 @@ Otherwise, they're not eligible. Print whether the customer is eligible or not.
 # else:
 #     print('No Senior Discount')
 
-# With Except / Else
-try:
-    user_age = int(input('Enter your Age: '))
-except ValueError:
-    print('Enter your Age as an integer')
-else:
-    if user_age >= 65:
-        print('You get a Senior Discount')
-    else:
-        print('No Senior Discount')
+
+# # With Except / Else
+# try:
+#     user_age = int(input('Enter your Age: '))
+# except ValueError:
+#     print('Enter your Age as an integer')
+# else:
+#     if user_age >= 65:
+#         print('You get a Senior Discount')
+#     else:
+#         print('No Senior Discount')
+
 
 # With Except / Else / Finally
 
