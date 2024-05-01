@@ -136,6 +136,7 @@ i = 2
 #     print(num_list)
 
 
+'''Class 21'''
 '''
 Exercise - Handling Invalid User Input
 Write a Python program that takes a customer's age as user input and determines whether they're eligible for a senior discount.
@@ -155,6 +156,13 @@ Otherwise, they're not eligible. Print whether the customer is eligible or not.
 # else:
 #     print('No Senior Discount')
 
+# '''Class Answer'''
+# try:
+#     customer_age = int(input('Enter your Age: '))
+#     print('Eligible for Discount') if customer_age >= 65 else print('Customer is not Eligible for Discount')
+# except ValueError:
+#     print('Enter your Age as an integer')  
+
 
 # # With Except / Else
 # try:
@@ -167,8 +175,25 @@ Otherwise, they're not eligible. Print whether the customer is eligible or not.
 #     else:
 #         print('No Senior Discount')
 
+# '''Class Answer'''
+# try:
+#     customer_age = int(input('Enter your Age: '))
+# except ValueError:
+#     print('Enter your Age as an integer') 
+# else:
+#     print('Eligible for Discount') if customer_age >= 65 else print('Customer is not Eligible for Discount') 
 
-# With Except / Else / Finally
+
+# # With Except / Else / Finally
+
+# try:
+#     customer_age = int(input('Enter your Age: '))
+# except ValueError:
+#     print('Enter your Age as an integer') 
+# else:
+#     print('Eligible for Discount') if customer_age >= 65 else print('Customer is not Eligible for Discount') 
+# finally:
+#     print('I will always run, no matter what. I am usually used for Cleanup.')
 
 
 '''
