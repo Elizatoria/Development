@@ -177,7 +177,7 @@ Otherwise, they're not eligible. Print whether the customer is eligible or not.
 
 # '''Class Answer'''
 # try:
-#     customer_age = int(input('Enter your Age: '))
+#     customer_age = int(input('Enter your Age: '))  # Only line we need to Try
 # except ValueError:
 #     print('Enter your Age as an integer') 
 # else:
@@ -196,6 +196,7 @@ Otherwise, they're not eligible. Print whether the customer is eligible or not.
 #     print('I will always run, no matter what. I am usually used for Cleanup.')
 
 
+# Went to Classes Part One
 '''
 Exercise 
 
