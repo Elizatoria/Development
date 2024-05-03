@@ -97,60 +97,83 @@ point7.set_y(25)
 Exercise - Dog Class
 This Class will have 3 Parameters: Dog Name, Dog Breed, and Age in Human years
 '''
-class Dog:
-    def __init__(self, name, birth_year, breed):
-        self.name = name
-        self.birth_year = birth_year
-        self.breed = breed
+# class Dog:
+#     def __init__(self, name, birth_year, breed):
+#         self.name = name
+#         self.birth_year = birth_year
+#         self.breed = breed
 
-    def __str__(self):
-        return f'{self.name} is a {self.breed} born in {self.birth_year}'
+#     def __str__(self):
+#         return f'{self.name} is a {self.breed} born in {self.birth_year}'
     
-    def human_age(self):
-        today = datetime.datetime.now()
-        year = today.year
-        return f'{self.name} is {year - self.birth_year} years old in Human years.'
+#     def human_age(self):
+#         today = datetime.datetime.now()
+#         year = today.year
+#         return f'{self.name} is {year - self.birth_year} years old in Human years.'
     
-    # Write a method that will calculate dog years
-    def dog_years(self):
-        today = datetime.datetime.now()
-        year = today.year
-        return f'{self.name} is {(year - self.birth_year) * 7}​​ years old in Dog years'
+#     # Write a method that will calculate dog years
+#     def dog_years(self):
+#         today = datetime.datetime.now()
+#         year = today.year
+#         return f'{self.name} is {(year - self.birth_year) * 7}​​ years old in Dog years'
 
-dog1 = Dog('Fido', 2020, 'Golden Retriever')  # Creates our first Object of the Dog Class
-dog2 = Dog('Zuzu', 2021, 'Dachsund')
-dog3 = Dog('Stella', 2016, 'Japanese Chin')
+# dog1 = Dog('Fido', 2020, 'Golden Retriever')  # Creates our first Object of the Dog Class
+# dog2 = Dog('Zuzu', 2021, 'Dachsund')
+# dog3 = Dog('Stella', 2016, 'Japanese Chin')
+
 # String Representation
 # print(dog1)
 # print(dog2)
 # print(dog3)
-# Human Age
-print(dog1.human_age())
-print(dog2.human_age())
-print(dog3.human_age())
 
-print(dog1.dog_years())
-print(dog2.dog_years())
-print(dog3.dog_years())
+# Human Age
+# print(dog1.human_age())
+# print(dog2.human_age())
+# print(dog3.human_age())
+
+# Dog Age
+# print(dog1.dog_years())
+# print(dog2.dog_years())
+# print(dog3.dog_years())
+
+'''Other Version of Dog Class'''
+# class Dog:
+   
+#     def __init__(self, name, birth_year, breed):
+#         self.name = name
+#         self.birth_year = birth_year
+#         self.breed = breed
+ 
+   
+#     def __str__(self):
+#         return f'{self.name} is a {self.breed} and was born in {self.birth_year}'
+   
+#     def human_age(self):
+#         today = datetime.datetime.now()
+#         year = today.year
+#         return year - self.birth_year
+   
+#     def dog_years(self):
+#         dog_years = 7 * self.human_age()
+#         return f'{self.name} is {dog_years} in dog years'
+    
+# dog1 = Dog('Fido', 2020, 'Golden Retriever')  # Creates our first Object of the Dog Class
+# dog2 = Dog('Zuzu', 2021, 'Dachsund')
+# dog3 = Dog('Stella', 2016, 'Japanese Chin')
+    
+# # String Representation
+# print(dog1)
+# print(dog2)
+# print(dog3)
+
+# # Human Age
+# print(dog1.human_age())
+# print(dog2.human_age())
+# print(dog3.human_age())
+# # Dog Age
+# print(dog1.dog_years())
+# print(dog2.dog_years())
+# print(dog3.dog_years())
 
 
 '''Exercise - Date Class'''
-class Dog:
-   
-    def __init__(self, name, birth_year, breed):
-        self.name = name
-        self.birth_year = birth_year
-        self.breed = breed
- 
-   
-    def __str__(self):
-        return f'{self.name} is a {self.breed} and was born in {self.birth_year}'
-   
-    def human_age(self):
-        today = datetime.datetime.now()
-        year = today.year
-        return year - self.birth_year
-   
-    def dog_years(self):
-        dog_years = 7 * self.human_age()
-        return f'{self.name} is {dog_years} in dog years'
