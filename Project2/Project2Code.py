@@ -1,3 +1,6 @@
+# from datetime import datetime
+import datetime
+
 '''
 You are tasked to build an employee management system for a small business.
 The system allows the business to store and manage employee data and perform tasks related to employee management, 
@@ -26,7 +29,7 @@ doesn't need to access them directly.
 '''
 class Employee:
     # Initializer with Attributes
-    def __init__(self, name, job_title, department, salary, hire_year):
+    def __init__(self, name: str, job_title: str, department: str, salary: float, hire_year: int) -> None:
         self.name = name
         self.job_title = job_title
         self.department = department
@@ -34,9 +37,27 @@ class Employee:
         self.hire_year = hire_year
 
     # __str__():  return a string representation
-    def __str__(self):
+    def __str__(self) -> str:
         return f'{self.name} is a {self.job_title} in the {self.department} Department. She makes {self.salary} and was hired in {self.hire_year}.'
+    
+    # years_worked():  return the total years this employee has worked here, based on the hire year.
+    def years_worked(self) -> int:
+        today = datetime.datetime.now()
+        year = today.year
+        return year - self.hire_year
+    
+    # total_expense():  calculate the total salary expense for this employee, which is the salary multiplied by the years worked.
+    def total_expense(self) -> str:
+        total_expense = self.salary * self.years_worked()
+        return f'Total Expense for {self.name} is {total_expense}.'
 
-employee1 = Employee('Xylia Pietas', 'Data Scientist', 'Data Analysis', 124360, 2024)
+employee1 = Employee('Xylia Pietas', 'Data Scientist', 'Data Analysis', 124360, 2011)  # Creates our first Object of the Employee Class
 
+# String Representation
 print(employee1)
+
+# How many years worked at the Company
+print(employee1.years_worked())
+
+# Total Expense of the Employee
+print(employee1.total_expense())
