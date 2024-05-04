@@ -50,14 +50,68 @@ class Employee:
     def total_expense(self) -> str:
         total_expense = self.salary * self.years_worked()
         return f'Total Expense for {self.name} is {total_expense}.'
+    
+    # write_employees():  Write your employee information to a text file.
+    def write_employees():
+        pass
 
-employee1 = Employee('Xylia Pietas', 'Data Scientist', 'Data Analysis', 124360, 2011)  # Creates our first Object of the Employee Class
+    # Accessor Method
+    def get_name(self) -> str:
+        return self.name
+    
+    def get_job_title(self) -> str:
+        return self.job_title
+    
+    def get_department(self) -> str:
+        return self.department
+    
+    def get_salary(self) -> float:
+        return self.salary
+    
+    def get_hire_year(self) -> int:
+        return self.hire_year
+    
+    # Mutator Method - Setter
+    def set_name(self, new_name):
+        self.name = new_name
 
-# String Representation
+    def set_job_title(self, new_job_title):
+        self.job_title = new_job_title
+
+    def set_department(self, new_department):
+        self.department = new_department
+
+    def set_salary(self, new_salary):
+        self.salary = new_salary
+    
+    def set_hire_year(self, new_hire_year):
+        self.hire_year = new_hire_year
+
+# Creates our first Object of the Employee Class
+employee1 = Employee('Xylia Pietas', 'Data Scientist', 'Data Analysis', 124360, 2011)
+
+# # String Representation
+# print(employee1)
+
+# # How many years worked at the Company
+# print(employee1.years_worked())
+
+# # Total Expense of the Employee
+# print(employee1.total_expense())
+
+# Write Employees
+
+# Getting with Accessor Method
+print(employee1.get_name())
+print(employee1.get_job_title())
+print(employee1.get_department())
+print(employee1.get_salary())
+print(employee1.get_hire_year())
+
+# Setting with Mutator Method
+employee1.set_name('Xylia Esquivel')
+employee1.set_job_title('Database Engineer')
+employee1.set_department('Computer Information Systems')
+employee1.set_salary(130306)
+employee1.set_hire_year(2013)
 print(employee1)
-
-# How many years worked at the Company
-print(employee1.years_worked())
-
-# Total Expense of the Employee
-print(employee1.total_expense())
