@@ -1,4 +1,4 @@
-# from datetime import datetime
+from datetime import datetime
 import datetime
 
 '''
@@ -72,19 +72,19 @@ class Employee:
         return self.hire_year
     
     # Mutator Method - Setter
-    def set_name(self, new_name):
+    def set_name(self, new_name: str) -> str:
         self.name = new_name
 
-    def set_job_title(self, new_job_title):
+    def set_job_title(self, new_job_title: str) -> str:
         self.job_title = new_job_title
 
-    def set_department(self, new_department):
+    def set_department(self, new_department: str) -> str:
         self.department = new_department
 
-    def set_salary(self, new_salary):
+    def set_salary(self, new_salary: float) -> float:
         self.salary = new_salary
     
-    def set_hire_year(self, new_hire_year):
+    def set_hire_year(self, new_hire_year: int) -> int:
         self.hire_year = new_hire_year
 
 # Creates our first Object of the Employee Class
