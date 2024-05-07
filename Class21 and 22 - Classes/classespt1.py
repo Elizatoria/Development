@@ -176,4 +176,76 @@ This Class will have 3 Parameters: Dog Name, Dog Breed, and Age in Human years
 # print(dog3.dog_years())
 
 
-'''Exercise - Date Class'''
+'''Class 22'''
+'''
+Exercise - Date Class
+Display the Date in the format mm/dd/yyyy
+Compare two dates if they are equal
+Compare which date came first
+Determine if the date is a leap year
+'''
+class Date:
+    def __init__(self, year=1970, month=1, day=1):
+        # These are our Parameters
+        self.year = year
+        self.month = month
+        self.day = day
+
+    # This will control what the print built in function displays
+    def __str__(self):
+        return f'Month: {self.month:02d}\nDay: {self.day:02d}\nYear: {self.year}'
+    
+    # This will control what == does in your Class
+    def __eq__(self, other):
+        if self.year == other.year and self.month == other.month and self.day == other.day:
+            return True
+        return False
+    
+    # Create a Method to handle less than date objects  # Which date came first?
+    def __lt__(self, other):
+        selfdate = datetime.datetime(self.year, self.month, self.day)
+        otherdate = datetime.datetime(other.year, other.month, other.day)
+        if selfdate < otherdate:
+            return True
+        return False
+    
+    # Leap Year I found
+    def leap_year(self):
+        if self.year % 400 == 0 or (self.year % 4 == 0 and self.year % 100 != 0):
+            return True
+        return False
+    
+    # Leap Year from Class
+    def is_leap_year(self):
+        if self.year % 4 == 0 and (self.year % 100 != 0 or self.year % 400 == 0):
+            return True
+        return False
+
+# Create the Object
+my_date_info = Date(2004, 10, 4)
+second_date= Date(2004, 10, 4)
+
+default_date =Date()
+# print(default_date)
+
+# String Representation
+# print(my_date_info)
+# print(second_date)
+
+# Equality
+# print(my_date_info == second_date)
+
+old_date = Date(1998, 2, 10)
+new_date = Date(2000, 2, 10)
+
+# print(old_date < new_date)
+
+my_new_date = Date(2008, 6, 1)
+
+# print(my_date_info.leap_year())
+# print(my_date_info.is_leap_year())
+
+other_new_date = Date(2009, 6, 1)
+
+# print(other_new_date.leap_year())
+# print(other_new_date.is_leap_year())
