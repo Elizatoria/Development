@@ -1,0 +1,5 @@
+Customer Name: Toninho Takeo
+Account Number: 2345
+Date: 05-05-24
+Balance: $1000.25
+Account Opened: Account opened 3 days ago.
