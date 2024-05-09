@@ -59,10 +59,14 @@ but before we do, lets look at other options we have to read files in.
 
 
 ''' 
-Bank account class 
-Create the bank account class per the specifications in the powerpoint.  
+Bank Account Class 
+Create the bank account class per the specifications in the powerpoint.
+
+Test after creating Constructor
+Test String Representation with print built in function on your object
 '''
 class BankAccount:
+    # Constructor
     def __init__(self, customer_name: str, acct_num: int, date: str, balance: float):
         self.customer_name = customer_name
         self.acct_name = acct_num
@@ -108,8 +112,11 @@ ac_no_2 = BankAccount("Jim Jones", 5424, "01-05-22", 1000 )
 ac_no_3 = BankAccount("Sally Field", 3242, "11-04-15", 1000 )
 ac_no_4 = BankAccount("Burt Reynolds", 4325, "08-11-13", 1000 )
 
-# # String Representation
+# # String Representation - What will print out?
 # print(ac_no_1)
+# print(ac_no_2)
+# print(ac_no_3)
+# print(ac_no_4)
 
 # # Deposit
 # ac_no_1.deposit(500)
