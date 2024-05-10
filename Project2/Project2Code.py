@@ -90,8 +90,8 @@ class Employee:
 # Creates our first Object of the Employee Class
 employee1 = Employee('Xylia Pietas', 'Data Scientist', 'Data Analysis', 124360, 2011)
 
-# String Representation
-print(employee1)
+# # String Representation
+# print(employee1)
 
 # # How many years worked at the Company
 # print(employee1.years_worked())
