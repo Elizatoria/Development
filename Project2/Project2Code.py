@@ -29,7 +29,7 @@ doesn't need to access them directly.
 '''
 class Employee:
     # Initializer with Attributes
-    def __init__(self, name: str, job_title: str, department: str, salary: float, hire_year: int) -> None:
+    def __init__(self, name: str, job_title: str, department: str, salary: float, hire_year: int):
         self.name = name
         self.job_title = job_title
         self.department = department
@@ -38,7 +38,7 @@ class Employee:
 
     # __str__():  return a string representation
     def __str__(self) -> str:
-        return f'{self.name} is a {self.job_title} in the {self.department} Department. She makes {self.salary} and was hired in {self.hire_year}.'
+        return f'Employee Name: {self.name}\nJob Title: {self.job_title}\nDepartment: {self.department}\nSalary: ${self.salary:.02f}\nHire Year: {self.hire_year}'
     
     # years_worked():  return the total years this employee has worked here, based on the hire year.
     def years_worked(self) -> int:
@@ -90,8 +90,8 @@ class Employee:
 # Creates our first Object of the Employee Class
 employee1 = Employee('Xylia Pietas', 'Data Scientist', 'Data Analysis', 124360, 2011)
 
-# # String Representation
-# print(employee1)
+# String Representation
+print(employee1)
 
 # # How many years worked at the Company
 # print(employee1.years_worked())
@@ -101,17 +101,17 @@ employee1 = Employee('Xylia Pietas', 'Data Scientist', 'Data Analysis', 124360, 
 
 # Write Employees
 
-# Getting with Accessor Method
-print(employee1.get_name())
-print(employee1.get_job_title())
-print(employee1.get_department())
-print(employee1.get_salary())
-print(employee1.get_hire_year())
+# # Getting with Accessor Method
+# print(employee1.get_name())
+# print(employee1.get_job_title())
+# print(employee1.get_department())
+# print(employee1.get_salary())
+# print(employee1.get_hire_year())
 
-# Setting with Mutator Method
-employee1.set_name('Xylia Esquivel')
-employee1.set_job_title('Database Engineer')
-employee1.set_department('Computer Information Systems')
-employee1.set_salary(130306)
-employee1.set_hire_year(2013)
-print(employee1)
+# # Setting with Mutator Method
+# employee1.set_name('Xylia Esquivel')
+# employee1.set_job_title('Database Engineer')
+# employee1.set_department('Computer Information Systems')
+# employee1.set_salary(130306)
+# employee1.set_hire_year(2013)
+# print(employee1)
