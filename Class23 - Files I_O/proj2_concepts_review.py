@@ -76,18 +76,18 @@ class BankAccount:
     def __str__(self):
         return f'Customer Name: {self.customer_name}\nAccount Number: {self.acct_name}\nDate: {self.date}\nBalance: ${self.balance:.02f}'
     
-    # Make a Deposit
+    # Make a Deposit, Update Amount
     def deposit(self, amount):
         self.balance += amount
-        print(f'{amount} has been deposited to your account. New Balance: {self.balance}')
+        print(f'{amount} has been deposited to your account.')
 
-    # Make a Withdrawal
+    # Make a Withdrawal, Update Amount
     def withdrawal(self, amount):
         if amount > self.balance:
             print('Sorry, Not enough Funds')
         else:
             self.balance -= amount
-            print(f'{amount} has been withdrawn from your account. New Balance: {self.balance}')
+            print(f'{amount} has been withdrawn from your account.')
 
     # Check Balance
     def check_balance(self):
@@ -119,9 +119,11 @@ ac_no_4 = BankAccount("Burt Reynolds", 4325, "08-11-13", 1000 )
 # print(ac_no_4)
 
 # # Deposit
+# ac_no_1.check_balance()
 # ac_no_1.deposit(500)
 
 # # Withdrawal
+# ac_no_1.check_balance()
 # ac_no_1.withdrawal(200)
 
 # # Check Balance
