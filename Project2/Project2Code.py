@@ -37,54 +37,56 @@ class Employee:
         self.hire_year = hire_year
 
     # __str__():  return a string representation
-    def __str__(self) -> str:
+    def __str__(self):
         return f'Employee Name: {self.name}\nJob Title: {self.job_title}\nDepartment: {self.department}\nSalary: ${self.salary:.02f}\nHire Year: {self.hire_year}'
     
     # years_worked():  return the total years this employee has worked here, based on the hire year.
-    def years_worked(self) -> int:
+    def years_worked(self):
         today = datetime.datetime.now()
         year = today.year
         return year - self.hire_year
     
     # total_expense():  calculate the total salary expense for this employee, which is the salary multiplied by the years worked.
-    def total_expense(self) -> str:
+    def total_expense(self):
         total_expense = self.salary * self.years_worked()
-        return f'Total Expense for {self.name} is {total_expense}.'
+        return f'Total Expense for {self.name} is ${total_expense:.02f}.'
     
     # write_employees():  Write your employee information to a text file.
-    def write_employees():
-        pass
+    def write_employees(self):
+        f = open('employee_details.txt', 'w')
+        f.write(f'Employee Name: {self.name}\nJob Title: {self.job_title}\nDepartment: {self.department}\nSalary: ${self.salary:.02f}\nHire Year: {self.hire_year}\nYears Worked: {self.years_worked()}\nTotal Expense: {self.total_expense()}')
+        f.close()
 
     # Accessor Method
-    def get_name(self) -> str:
-        return self.name
+    def get_name(self):
+        print(self.name)
     
-    def get_job_title(self) -> str:
-        return self.job_title
+    def get_job_title(self):
+        print(self.job_title)
     
-    def get_department(self) -> str:
-        return self.department
+    def get_department(self):
+        print(self.department)
     
-    def get_salary(self) -> float:
-        return self.salary
+    def get_salary(self):
+        print(self.salary)
     
-    def get_hire_year(self) -> int:
-        return self.hire_year
+    def get_hire_year(self):
+        print(self.hire_year)
     
     # Mutator Method - Setter
-    def set_name(self, new_name: str) -> str:
+    def set_name(self, new_name: str):
         self.name = new_name
 
-    def set_job_title(self, new_job_title: str) -> str:
+    def set_job_title(self, new_job_title: str):
         self.job_title = new_job_title
 
-    def set_department(self, new_department: str) -> str:
+    def set_department(self, new_department: str):
         self.department = new_department
 
-    def set_salary(self, new_salary: float) -> float:
+    def set_salary(self, new_salary: float):
         self.salary = new_salary
     
-    def set_hire_year(self, new_hire_year: int) -> int:
+    def set_hire_year(self, new_hire_year: int):
         self.hire_year = new_hire_year
 
 # Creates our first Object of the Employee Class
@@ -99,14 +101,15 @@ employee1 = Employee('Xylia Pietas', 'Data Scientist', 'Data Analysis', 124360, 
 # # Total Expense of the Employee
 # print(employee1.total_expense())
 
-# Write Employees
+# # Write Employees
+# employee1.write_employees()
 
 # # Getting with Accessor Method
-# print(employee1.get_name())
-# print(employee1.get_job_title())
-# print(employee1.get_department())
-# print(employee1.get_salary())
-# print(employee1.get_hire_year())
+# employee1.get_name()
+# employee1.get_job_title()
+# employee1.get_department()
+# employee1.get_salary()
+# employee1.get_hire_year()
 
 # # Setting with Mutator Method
 # employee1.set_name('Xylia Esquivel')
