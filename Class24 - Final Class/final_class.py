@@ -92,6 +92,18 @@ print(result)
 # cardNumberHider()
 
 
+# def card_mask(ccnum):
+#     amex = ''
+#     for c,d in enumerate(ccnum):
+#         if c < 12:
+#             amex += '*'
+#         else:
+#             amex += d
+#     return amex
+# ccnum = '1234567890987654'
+# print(card_mask(ccnum))
+
+
 '''
 Repeat the characters
 Create a Python function that accepts a string. 
@@ -147,11 +159,11 @@ odd = []
 
 
 '''Write function to count down how long an Employee has been at the company for Month Day Year'''
-from dateutil.relativedelta import relativedelta
-from datetime import date
+# from dateutil.relativedelta import relativedelta
+# from datetime import date
  
-hire_date = date(2000, 4, 20)
-current_date = date.today()
+# hire_date = date(2000, 4, 20)
+# current_date = date.today()
  
-years_of_service = relativedelta(hire_date, current_date)
-print(f'Employee 1 has been working for {years_of_service.years} years, {years_of_service.months} months, {years_of_service.days} days ')
+# years_of_service = relativedelta(hire_date, current_date)
+# print(f'Employee 1 has been working for {years_of_service.years} years, {years_of_service.months} months, {years_of_service.days} days ')
