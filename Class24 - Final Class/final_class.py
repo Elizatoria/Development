@@ -110,6 +110,15 @@ str_2 = '123a!'
 # print(doubled_string)
 
 
+# double = map(lambda x:x+x, str_1)
+# for d in double:
+#     print(d, end='')
+
+# double = map(lambda x:x+x, str_2)
+# for d in double:
+#     print(d, end='')
+
+
 ''' 
 Create a function, use a for loop and conditionals (if statements) to solve the following:
 Given a list of even numbers, odd numbers, and words, create a function that will create a list of even numbers, 
@@ -123,15 +132,26 @@ string = []
 even = []
 odd = []
 
-def organize(my_list):
-    for d in data:
-        if isinstance(d, str):
-            string.append(d)
-        else:
-            if d % 2:
-                even.append(d)
-            else:
-                odd.append(d)
-    return string, even, odd
+# def organize(my_list):
+#     for d in data:
+#         if isinstance(d, str):
+#             string.append(d)
+#         else:
+#             if d % 2:
+#                 even.append(d)
+#             else:
+#                 odd.append(d)
+#     return string, even, odd
 
-print(organize(data))
+# print(organize(data))
+
+
+'''Employee Month Day Year'''
+from dateutil.relativedelta import relativedelta
+from datetime import date
+ 
+hire_date = date(2000, 4, 20)
+current_date = date.today()
+ 
+years_of_service = relativedelta(hire_date, current_date)
+print(f'Employee 1 has been working for {years_of_service.years} years, {years_of_service.months} months, {years_of_service.days} days ')
