@@ -83,13 +83,13 @@ print(result)
 
  Loop through and solve with indexing
 '''
-def cardNumberHider():
-    str = input("Enter the card number: ")
-    masked = len(str) - 4    
-    slimstr = str[masked:]
-    print("Your masked card number is: ", end="")
-    print("*" * masked + slimstr)
-cardNumberHider()
+# def cardNumberHider():
+#     str = input("Enter the card number: ")
+#     masked = len(str) - 4    
+#     slimstr = str[masked:]
+#     print("Your masked card number is: ", end="")
+#     print("*" * masked + slimstr)
+# cardNumberHider()
 
 
 '''
@@ -103,6 +103,11 @@ Hint: Looks like a job for lambda functions and filters
 str_1 = 'now'
 str_2 = '123a!'
 
+# double_characters = lambda string: ''.join(char * 2 for char in string)
+# doubled_string = double_characters(str_1)
+# print(doubled_string)
+# doubled_string = double_characters(str_2)
+# print(doubled_string)
 
 
 ''' 
@@ -112,8 +117,21 @@ a list of odd numbers, and a list of words. (3 separate lists)
 
 data = [1,2,3,4,5,6,7,8,9,10,11, 'horse', 'mule', 'ketchup', 'sunshine']
 '''
+data = [1,2,3,4,5,6,7,8,9,10,11, 'horse', 'mule', 'ketchup', 'sunshine']
 
+string = []
+even = []
+odd = []
 
+def organize(my_list):
+    for d in data:
+        if isinstance(d, str):
+            string.append(d)
+        else:
+            if d % 2:
+                even.append(d)
+            else:
+                odd.append(d)
+    return string, even, odd
 
-
-
+print(organize(data))
