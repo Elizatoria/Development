@@ -146,7 +146,7 @@ odd = []
 # print(organize(data))
 
 
-'''Employee Month Day Year'''
+'''Write function to count down how long an Employee has been at the company for Month Day Year'''
 from dateutil.relativedelta import relativedelta
 from datetime import date
  
